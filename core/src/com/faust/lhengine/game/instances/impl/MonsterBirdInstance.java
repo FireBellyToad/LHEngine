@@ -94,6 +94,9 @@ public class MonsterBirdInstance extends ChaserInstance implements Interactable,
     @Override
     public void postHurtLogic(GameInstance attacker) {
 
+        //If for some reason is not aggressive, force it after being hurt
+        this.isAggressive = true;
+
         // is pushed away while flickering
         Vector2 direction = new Vector2(attacker.getBody().getPosition().x - body.getPosition().x,
                 attacker.getBody().getPosition().y - body.getPosition().y).nor();

@@ -10,6 +10,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -33,10 +34,13 @@ public class AbstractController {
      * @param newScreen MainWorldEditorScenes value of the new screen
      * @throws IOException
      */
+    @SuppressWarnings("ClassEscapesDefinedScope")
     public void changeScene (MainWorldEditorScenes newScreen) throws IOException {
         Objects.requireNonNull(newScreen);
+        Objects.requireNonNull(getClass().getResource(newScreen.getFilename()));
 
-        final Parent newSceneRoot = FXMLLoader.load(getClass().getResource(newScreen.getFilename()));
+        URL newScreenURL = getClass().getResource(newScreen.getFilename());
+        final Parent newSceneRoot = FXMLLoader.load(newScreenURL);
 
         final Stage stage = (Stage) rootVbox.getScene().getWindow();
         stage.setScene(new Scene(newSceneRoot));
@@ -58,7 +62,10 @@ public class AbstractController {
         openedModal.initModality(Modality.APPLICATION_MODAL);
         openedModal.initOwner(rootVbox.getScene().getWindow());
 
-        final Scene dialogScene = new Scene(FXMLLoader.load(getClass().getResource(filename)));
+        URL popupFileUrl = getClass().getResource(filename);
+        Objects.requireNonNull(popupFileUrl);
+
+        final Scene dialogScene = new Scene(FXMLLoader.load(popupFileUrl));
         openedModal.setScene(dialogScene);
         openedModal.show();
 

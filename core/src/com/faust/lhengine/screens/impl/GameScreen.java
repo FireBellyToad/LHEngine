@@ -2,7 +2,6 @@ package com.faust.lhengine.screens.impl;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
-import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.physics.box2d.Box2D;
 import com.badlogic.gdx.utils.Timer;
@@ -28,7 +27,6 @@ public class GameScreen extends AbstractScreen {
 
     public static final long FLICKER_DURATION_IN_NANO = 125000000; // 1/8 second in nanoseconds
 
-    private final AssetManager assetManager;
     private final MusicManager musicManager;
     private final TextLocalizer textLocalizer;
     private final WorldManager worldManager;

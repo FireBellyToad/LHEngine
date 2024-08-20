@@ -6,9 +6,9 @@ L'azione si ferma sul primo errore trovato partendo dall'inizio alla fine di ogn
 
 ## Documentazione comandi
 
-* **hurtPlayer**: Danneggia il Personaggio in questo step. Solo *damage* è necessario.
-  "**damage**: Danno da infliggere al Personaggio.
-  * **canKillPlayer**: Indica se questo danno può uccidere il Personaggio. Se è false, non verrà inflitto danno quando il Personaggio non ha ulteriore vita.
+* **hurtPlayer**: Danneggia il Personaggio in questo step.
+  * ***damage**: (necessario) Danno da infliggere al Personaggio.
+  * **canKillPlayer**: Indica se questo danno può uccidere il Personaggio. Se è false, non verrà inflitto danno quando il Personaggio non ha più punti vita.
 * **invisible**: In questo step non renderizzerà l'attore.
 * **textBoxKey**: Chiave di una textbox per questo step
 * **renderOnlyMapLayer**: In questo step renderizzerà solo i tile del map_layer indicato
@@ -31,4 +31,4 @@ L'azione si ferma sul primo errore trovato partendo dall'inizio alla fine di ogn
     * **y**: posizione Y dove verrà generata. Di default è quella dell'Echoactor.
     * **relative**: se true, le coordinate qui sopra sono aggiunte algebricamente alla posizone dell'Echoactor
 * **splashToShow**: splash da mostrare fino alla fine dello step.
-* **useAnimationOfStep**: utilizza per questo step l'animazione dello step indicato come parametro.
+* **useAnimationOfStep**: utilizza per questo step l'animazione dello step indicato come parametro. Utile per riciclare animazioni e diminuire le dimensioni degli spritesheet

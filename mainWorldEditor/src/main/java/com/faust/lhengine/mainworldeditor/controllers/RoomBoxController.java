@@ -6,11 +6,9 @@ import com.faust.lhengine.game.rooms.RoomPosition;
 import com.faust.lhengine.game.rooms.enums.RoomTypeEnum;
 import com.faust.lhengine.mainworldeditor.mediator.ControllerMediator;
 import javafx.collections.FXCollections;
-import javafx.css.PseudoClass;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 

@@ -81,6 +81,7 @@ public class CasualRoom extends AbstractRoom {
                 casualNumber = MathUtils.random(1, CasualRoom.CASUAL_TOTAL);
             }
         }
+
         Gdx.app.log(LoggerUtils.DEBUG_TAG, "casualNumber: " + casualNumber);
 
         //Enforce number between 1 and CASUAL_TOTAL. Seemingly unnecessary, but...
@@ -108,7 +109,7 @@ public class CasualRoom extends AbstractRoom {
                 }
             });
         }
-        if (roomContent.enemyList.size() > 0) {
+        if (!roomContent.enemyList.isEmpty()) {
             //Loop title music
             musicManager.playMusic(TuneEnum.DANGER, 0.75f);
         } else {

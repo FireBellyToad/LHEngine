@@ -4,7 +4,6 @@ import com.esotericsoftware.jsonbeans.Json;
 import com.esotericsoftware.jsonbeans.JsonSerializer;
 import com.esotericsoftware.jsonbeans.JsonValue;
 import com.faust.lhengine.game.gameentities.enums.DirectionEnum;
-import com.faust.lhengine.game.rooms.MainWorldModel;
 import com.faust.lhengine.game.rooms.RoomModel;
 import com.faust.lhengine.game.rooms.RoomPosition;
 import com.faust.lhengine.game.rooms.enums.RoomTypeEnum;

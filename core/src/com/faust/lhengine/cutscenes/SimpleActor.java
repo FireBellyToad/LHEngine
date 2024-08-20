@@ -106,7 +106,7 @@ public class SimpleActor {
             startToFlickTime = TimeUtils.nanoTime();
         }
 
-        return !mustFlickerCheck || (mustFlickerCheck && !mustFlicker);
+        return !mustFlickerCheck || !mustFlicker;
     }
 
     /**

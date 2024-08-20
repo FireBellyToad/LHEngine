@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.Objects;
 
 /**
  * Main World Editor Application
@@ -19,7 +21,9 @@ public class MainWorldEditorApplication extends Application {
     public void start(Stage stage) throws IOException {
 
         //Opens up main view
-        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("controllers/"+MainWorldEditorScenes.EDITING.getFilename())));
+        URL editingPageUrl = getClass().getResource("controllers/" + MainWorldEditorScenes.EDITING.getFilename());
+        Objects.requireNonNull(editingPageUrl);
+        Scene scene = new Scene(FXMLLoader.load(editingPageUrl));
         stage.setTitle("LH-Engine Main World Editor");
         stage.setScene(scene);
         stage.show();

@@ -1,17 +1,13 @@
 package com.faust.lhengine.mainworldeditor.model;
 
 import com.esotericsoftware.jsonbeans.Json;
-import com.esotericsoftware.jsonbeans.JsonSerializer;
 import com.esotericsoftware.jsonbeans.OutputType;
-import com.faust.lhengine.game.gameentities.enums.DirectionEnum;
-import com.faust.lhengine.game.rooms.MainWorldModel;
 import com.faust.lhengine.game.rooms.RoomModel;
 import com.faust.lhengine.game.rooms.RoomPosition;
 import com.faust.lhengine.mainworldeditor.serialization.MainWorldSerializer;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 
 /**
@@ -32,9 +28,7 @@ public class MainWorldData {
         jsonParser.setSerializer(MainWorldData.class, new MainWorldSerializer());
         jsonParser.setOutputType(OutputType.json);
 
-        String mapJson = jsonParser.prettyPrint(this);
-
-        return mapJson;
+        return jsonParser.prettyPrint(this);
     }
 
     public void clear() {

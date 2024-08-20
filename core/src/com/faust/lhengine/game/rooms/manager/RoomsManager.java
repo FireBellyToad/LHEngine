@@ -133,9 +133,11 @@ public class RoomsManager {
         currentRoomSaveEntry = saveMap.get(currentRoomPosInWorld);
         if (Objects.isNull(currentRoomSaveEntry)) {
             currentRoomSaveEntry = new RoomSaveEntry(
-                    (int) finalX,
-                    (int) finalY,
-                    0, populateRoomFlags(), new HashMap<>());
+                    finalX,
+                    finalY,
+                    0,
+                    populateRoomFlags(),
+                    new HashMap<>());
         } else {
             currentRoomSaveEntry.savedFlags.putAll(populateRoomFlags());
         }

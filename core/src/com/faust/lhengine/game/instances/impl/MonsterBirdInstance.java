@@ -232,6 +232,7 @@ public class MonsterBirdInstance extends ChaserInstance implements Interactable,
         return isDead();
     }
 
+    @SuppressWarnings("unchecked")
     private void leechLife() {
 
         // Force cancel another one must start

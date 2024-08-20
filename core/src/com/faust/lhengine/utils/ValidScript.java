@@ -31,6 +31,7 @@ public class ValidScript {
      * @param filename    filename of the extracted step (readonly, used for logs)
      * @throws ScriptValidationException
      */
+    @SuppressWarnings("unchecked")
     public static void validate(JsonValue parsedSteps, String filename) throws ScriptValidationException {
         int parsedStepNumber = 0;
         final Set<ScriptCommandsEnum> incompatibleCommandInStepSet = new HashSet();
@@ -103,6 +104,8 @@ public class ValidScript {
                 EnemyEnum enemyEnum = null;
 
                 //String values validation
+                assert extractedValue instanceof String;
+
                 switch (extractedCommand) {
                     case IF_AT_LEAST_ONE_KILLABLE_ALIVE: {
 
@@ -149,6 +152,7 @@ public class ValidScript {
                         break;
                     }
                     case USE_ANIMATION_OF_STEP: {
+                        assert extractedValue != null;
                         if (extractedValue.equals(parsedStepNumber)) {
                             throw new IllegalArgumentException(" useAnimationOfStep cannot have value of " + extractedValue + " because is the same as the step!");
                         }

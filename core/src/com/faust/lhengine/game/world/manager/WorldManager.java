@@ -85,7 +85,7 @@ public class WorldManager implements RayCaster {
         playerInstance.setStartX(0);
         playerInstance.setStartY(0);
 
-        if (!Objects.isNull(verticalVelocity) || !Objects.isNull(horizontalVelocity)) {
+        if (!Objects.isNull(verticalVelocity)) {
             playerInstance.getBody().setLinearVelocity(horizontalVelocity, verticalVelocity);
         }
     }

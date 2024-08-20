@@ -14,7 +14,7 @@ public class AbstractScreen implements Screen {
 
     protected final LHEngine game;
     protected final CameraManager cameraManager;
-    protected final AssetManager assetManager;
+    protected AssetManager assetManager;
 
     public AbstractScreen(LHEngine game) {
         this.game = game;

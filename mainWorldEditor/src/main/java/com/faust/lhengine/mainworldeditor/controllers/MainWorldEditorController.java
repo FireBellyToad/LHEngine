@@ -13,7 +13,6 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.GridPane;
@@ -54,7 +53,7 @@ public class MainWorldEditorController extends AbstractController {
     }
 
     @FXML
-    protected void closeCurrentMainWorld() throws IOException {
+    protected void closeCurrentMainWorld() {
         mainWorldData = null;
         roomBoxContainer.setContent(null);
     }
@@ -160,8 +159,6 @@ public class MainWorldEditorController extends AbstractController {
 
             populateRoomBoxContainer();
 
-        } catch (Exception e) {
-            throw e;
         }
     }
 

@@ -210,19 +210,16 @@ public class Menu implements InputProcessor {
         switch (selectedMenuVoice) {
             case 0: {
                 //New game
-                selectedMenuVoice = 0;
                 currentMenu = MenuItem.PLAY_GAME;
                 break;
             }
             case 1: {
                 //credit
-                selectedMenuVoice = 1;
                 changeToCreditScreen = true;
                 break;
             }
             case 2: {
                 //credit
-                selectedMenuVoice = 2;
                 changeToStoryScreen = true;
                 break;
             }
@@ -256,7 +253,6 @@ public class Menu implements InputProcessor {
             case 0: {
                 //Yes, continue game
                 changeToGameScreen = true;
-                selectedMenuVoice = 0;
                 break;
             }
             case 1: {

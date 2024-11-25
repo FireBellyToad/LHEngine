@@ -90,9 +90,6 @@ public class GameScreen extends AbstractScreen {
             stateTime += Gdx.graphics.getDeltaTime();
         }
 
-        Gdx.gl.glClearColor(0f, 0f, 0f, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
         cameraManager.applyAndUpdate();
         game.getBatch().setProjectionMatrix(cameraManager.getCamera().combined);
 

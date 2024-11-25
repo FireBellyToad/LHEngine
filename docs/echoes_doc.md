@@ -7,7 +7,7 @@ L'azione si ferma sul primo errore trovato partendo dall'inizio alla fine di ogn
 ## Documentazione comandi
 
 * **hurtPlayer**: Danneggia il Personaggio in questo step.
-  * ***damage**: (necessario) Danno da infliggere al Personaggio.
+  * **damage**: (necessario) Danno da infliggere al Personaggio.
   * **canKillPlayer**: Indica se questo danno può uccidere il Personaggio. Se è false, non verrà inflitto danno quando il Personaggio non ha più punti vita.
 * **invisible**: In questo step non renderizzerà l'attore.
 * **textBoxKey**: Chiave di una textbox per questo step

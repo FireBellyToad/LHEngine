@@ -10,7 +10,7 @@ import com.faust.lhengine.camera.CameraManager;
  *
  * @author Jacopo "Faust" Buttiglieri
  */
-public class AbstractScreen implements Screen {
+public abstract class AbstractScreen implements Screen {
 
     protected final LHEngine game;
     protected final CameraManager cameraManager;
@@ -28,9 +28,7 @@ public class AbstractScreen implements Screen {
     }
 
     @Override
-    public void render(float delta) {
-
-    }
+    public abstract void render(float delta);
 
     @Override
     public void resize(int width, int height) {

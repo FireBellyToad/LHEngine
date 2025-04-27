@@ -2,8 +2,6 @@ package com.faust.lhengine.lwjgl3;
 
 import java.util.Arrays;
 
-import com.badlogic.gdx.Files;
-import com.badlogic.gdx.Graphics.DisplayMode;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.faust.lhengine.LHEngine;

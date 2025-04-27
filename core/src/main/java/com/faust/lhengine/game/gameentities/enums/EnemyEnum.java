@@ -5,7 +5,7 @@ import com.faust.lhengine.game.instances.impl.*;
 
 public enum EnemyEnum {
     STRIX(MonsterBirdInstance.class),
-    BOUNDED(FyingCorpseInstance.class),
+    FLYING_CORPSE(FyingCorpseInstance.class),
     HIVE(FleshWallInstance.class),
     SPITTER(SpitterInstance.class),
     MEAT(FleshBiterInstance.class),

@@ -47,7 +47,7 @@ public class LoadingScreen extends AbstractScreen {
         assetManager.load("sprites/decorations_sheet.png", Texture.class);
         assetManager.load("sprites/poi_sheet.png", Texture.class);
         assetManager.load("sprites/shadow.png", Texture.class);
-        assetManager.load("sprites/bounded_sheet.png", Texture.class);
+        assetManager.load("sprites/flying_corpse_sheet.png", Texture.class);
         assetManager.load("sprites/strix_sheet.png", Texture.class);
         assetManager.load("sprites/hive_sheet.png", Texture.class);
         assetManager.load("sprites/spitter_sheet.png", Texture.class);

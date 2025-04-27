@@ -195,8 +195,8 @@ public class RoomsManager {
 
         //Avoid showing more than one time enemy splash
         saveMap.forEach((key, entry) -> {
-            if (entry.savedFlags.get(RoomFlagEnum.FIRST_BOUNDED_ENCOUNTERED)) {
-                newRoomFlags.put(RoomFlagEnum.FIRST_BOUNDED_ENCOUNTERED, true);
+            if (entry.savedFlags.get(RoomFlagEnum.FIRST_FLYING_CORPSE_ENCOUNTERED)) {
+                newRoomFlags.put(RoomFlagEnum.FIRST_FLYING_CORPSE_ENCOUNTERED, true);
             }
             if (entry.savedFlags.get(RoomFlagEnum.FIRST_STRIX_ENCOUNTERED)) {
                 newRoomFlags.put(RoomFlagEnum.FIRST_STRIX_ENCOUNTERED, true);
@@ -207,8 +207,8 @@ public class RoomsManager {
         });
 
 
-        //Only bounded enemies after 15 rooms are visited
-        newRoomFlags.put(RoomFlagEnum.GUARDANTEED_BOUNDED, saveMap.size() >= 15);
+        //Only flying_corpse enemies after 15 rooms are visited
+        newRoomFlags.put(RoomFlagEnum.GUARDANTEED_FLYING_CORPSE, saveMap.size() >= 15);
 
         //If this is the room visited, there should be no enemies even if they are in map
         newRoomFlags.put(RoomFlagEnum.DISABLED_ENEMIES, saveMap.size() < 2);

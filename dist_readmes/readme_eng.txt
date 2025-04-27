@@ -37,7 +37,7 @@ Other useful objects are hidden on the river shallows, if Walfrit will explore t
 Monsters are Walfrit's enemies: dark creatures that will try to kill him during the search of the Holy lance.
 
     Strix: Monstrous vampiric bird. It can bleed an adult human to death within seconds.
-    Bounded: Flying undead. Dangerous and hard to kill with common weapons.
+    FlyingCorpse: Flying undead. Dangerous and hard to kill with common weapons.
     Wall of flesh: Prevents passage to some places. It can't be harmed by common weapons.
 
 Other creatures populate the cursed lands of Langobardia Horribilis. Surely there is a source where these monstruosities come from...

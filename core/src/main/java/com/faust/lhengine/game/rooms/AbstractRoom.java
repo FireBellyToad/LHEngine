@@ -320,7 +320,7 @@ public abstract class AbstractRoom implements SpawnFactory {
             }
             default: {
 
-                if (roomContent.roomFlags.get(RoomFlagEnum.GUARDANTEED_BOUNDED)) {
+                if (roomContent.roomFlags.get(RoomFlagEnum.GUARDANTEED_FLYING_CORPSE)) {
                     addedInstance = new FyingCorpseInstance(
                             (float) obj.getProperties().get("x"),
                             (float) obj.getProperties().get("y"),
@@ -329,10 +329,10 @@ public abstract class AbstractRoom implements SpawnFactory {
                             worldManager);
 
                     //Show splash only the first time
-                    if (!roomContent.roomFlags.get(RoomFlagEnum.FIRST_BOUNDED_ENCOUNTERED))
-                        splashManager.setSplashToShow("splash.bounded");
+                    if (!roomContent.roomFlags.get(RoomFlagEnum.FIRST_FLYING_CORPSE_ENCOUNTERED))
+                        splashManager.setSplashToShow("splash.flying_corpse");
 
-                    roomContent.roomFlags.put(RoomFlagEnum.FIRST_BOUNDED_ENCOUNTERED, true);
+                    roomContent.roomFlags.put(RoomFlagEnum.FIRST_FLYING_CORPSE_ENCOUNTERED, true);
                 } else {
                     addedInstance = new MonsterBirdInstance(
                             (float) obj.getProperties().get("x"),

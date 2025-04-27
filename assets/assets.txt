@@ -89,7 +89,6 @@ splash/strix_splash.png
 splash/title_splash.png
 splash/title_splash.xcf
 splash/waterskin_splash.png
-sprites/bounded_sheet.png
 sprites/darkness_overlay.png
 sprites/decorations_sheet.png
 sprites/diaconus_echo_sheet.png
@@ -98,6 +97,7 @@ sprites/discipulus_sheet.png
 sprites/double_hand_sheet.png
 sprites/escape_portal_sheet.png
 sprites/fleshpillar_sheet.png
+sprites/flying_corpse_sheet.png
 sprites/hand_sheet.png
 sprites/hive_sheet.png
 sprites/horror_body_sheet.png

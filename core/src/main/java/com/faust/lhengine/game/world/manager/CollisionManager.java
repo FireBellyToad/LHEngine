@@ -97,7 +97,7 @@ public class CollisionManager implements ContactListener {
             handleEnemyCollisionEvent(contact, MonsterBirdInstance.class);
         }
 
-        // Handle Bounded Collision
+        // Handle FlyingCorpse Collision
         if (isContactOfClass(contact, FyingCorpseInstance.class)) {
             handleEnemyCollisionEvent(contact, FyingCorpseInstance.class);
         }
@@ -222,7 +222,7 @@ public class CollisionManager implements ContactListener {
             handleEnemyCollisionEventEnd(contact, MonsterBirdInstance.class);
         }
 
-        // Handle Bounded Collision end
+        // Handle FlyingCorpse Collision end
         if (isContactOfClass(contact, FyingCorpseInstance.class)) {
             handleEnemyCollisionEventEnd(contact, FyingCorpseInstance.class);
         }

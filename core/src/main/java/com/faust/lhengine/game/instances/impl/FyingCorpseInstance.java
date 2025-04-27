@@ -29,7 +29,7 @@ import com.faust.lhengine.utils.LoggerUtils;
 import java.util.Objects;
 
 /**
- * Bounded enemy instance class
+ * FlyingCorpse enemy instance class
  *
  * @author Jacopo "Faust" Buttiglieri
  */
@@ -77,7 +77,7 @@ public class FyingCorpseInstance extends ChaserInstance implements Interactable,
                 changeCurrentBehavior(GameBehavior.ATTACK);
             }
 
-            // Normal from bounded position to target
+            // Normal from flying_corpse position to target
             Vector2 direction = new Vector2(target.getBody().getPosition().x - body.getPosition().x,
                     target.getBody().getPosition().y - body.getPosition().y).nor();
             currentDirectionEnum = extractDirectionFromNormal(direction);
@@ -92,7 +92,7 @@ public class FyingCorpseInstance extends ChaserInstance implements Interactable,
             changeCurrentBehavior(GameBehavior.WALK);
             calculateNewGoal(roomContent.roomGraph);
 
-            // Normal from Bounded position to target
+            // Normal from FlyingCorpse position to target
             final Vector2 destination = getMovementDestination();
             Vector2 direction = new Vector2(destination.x - body.getPosition().x,
                     destination.y - body.getPosition().y).nor();
@@ -302,7 +302,7 @@ public class FyingCorpseInstance extends ChaserInstance implements Interactable,
         //Draw shadow
         batch.draw(((FyingCorpseEntity) entity).getShadowTexture(), drawPosition.x - POSITION_OFFSET, drawPosition.y - 2 - POSITION_Y_OFFSET);
 
-        //Draw Bounded
+        //Draw FlyingCorpse
 
         // If not hurt or the flickering POI must be shown, draw the texture
         if (!mustFlicker || !GameBehavior.HURT.equals(getCurrentBehavior())) {
@@ -330,7 +330,7 @@ public class FyingCorpseInstance extends ChaserInstance implements Interactable,
     }
 
     /**
-     * Method for hurting the Bounded
+     * Method for hurting the FlyingCorpse
      *
      * @param attacker
      */

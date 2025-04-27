@@ -5,8 +5,8 @@
       "splashPath": "splash/strix_splash.png"
     },
     {
-      "splashKey": "splash.bounded",
-      "splashPath": "splash/bounded_splash.png"
+      "splashKey": "splash.flying_corpse",
+      "splashPath": "splash/flying_corpse_splash.png"
     },
     {
       "splashKey": "splash.hive",

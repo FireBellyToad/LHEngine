@@ -12,7 +12,7 @@ import com.faust.lhengine.game.gameentities.enums.GameBehavior;
 import java.util.Arrays;
 
 /**
- * Bounded enemy Entity class
+ * FlyingCorpse enemy Entity class
  *
  * @author Jacopo "Faust" Buttiglieri
  */
@@ -24,7 +24,7 @@ public class FyingCorpseEntity extends AnimatedEntity {
     private final Texture shadow;
 
     public FyingCorpseEntity(AssetManager assetManager) {
-        super(assetManager.get("sprites/bounded_sheet.png"));
+        super(assetManager.get("sprites/flying_corpse_sheet.png"));
         shadow = assetManager.get("sprites/shadow.png");
         hurtCry = assetManager.get("sounds/SFX_shot4.ogg");
         deathCry = assetManager.get("sounds/SFX_creatureDie4.ogg");

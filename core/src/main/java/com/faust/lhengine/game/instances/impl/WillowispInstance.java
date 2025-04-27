@@ -83,7 +83,7 @@ public class WillowispInstance extends ChaserInstance implements Interactable, H
                 changeCurrentBehavior(GameBehavior.ATTACK);
             } else if (GameBehavior.ATTACK.equals(getCurrentBehavior())) {
                 //Start attack animation
-                // Normal from bounded position to target
+                // Normal from flying_corpse position to target
                 Vector2 direction = new Vector2(target.getBody().getPosition().x - body.getPosition().x,
                         target.getBody().getPosition().y - body.getPosition().y).nor();
                 currentDirectionEnum = extractDirectionFromNormal(direction);
@@ -329,7 +329,7 @@ public class WillowispInstance extends ChaserInstance implements Interactable, H
     }
 
     /**
-     * Method for hurting the Bounded
+     * Method for hurting the FlyingCorpse
      *
      * @param attacker
      */

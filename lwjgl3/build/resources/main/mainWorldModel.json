@@ -1,0 +1,375 @@
+{
+	"terrains": [
+		{
+			"x": 0,
+			"y": 0,
+			"roomType": "CEMETERY_CENTER"
+		},
+		{
+			"x": 1,
+			"y": 0,
+			"roomType": "CEMETERY_RIGHT"
+		},
+		{
+			"x": 2,
+			"y": 0,
+			"roomType": "START_LEFT"
+		},
+		{
+			"x": 3,
+			"y": 0,
+			"roomType": "START_POINT"
+		},
+		{
+			"x": 4,
+			"y": 0,
+			"roomType": "START_RIGHT"
+		},
+		{
+			"x": 5,
+			"y": 0,
+			"roomType": "CASUAL",
+			"boundaries": [{
+				"side": "DOWN",
+				"target": {
+					"x":0,
+					"y":6
+				}
+			}]
+		},
+		{
+			"x": 6,
+			"y": 0,
+			"roomType": "CASUAL",
+			"boundaries": [{
+				"side": "DOWN",
+				"target": {
+					"x":0,
+					"y":7
+				}
+			},{
+				"side": "RIGHT",
+				"target": {
+					"x":0,
+					"y":7
+				}
+			}]
+		},
+		{
+			"x": 0,
+			"y": 1,
+			"roomType": "CEMETERY_TOP"
+		},
+		{
+			"x": 1,
+			"y": 1,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 2,
+			"y": 1,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 3,
+			"y": 1,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 4,
+			"y": 1,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 5,
+			"y": 1,
+			"roomType": "INFERNUM"
+		},
+		{
+			"x": 6,
+			"y": 1,
+			"roomType": "CASUAL",
+			"boundaries": [{
+				"side": "RIGHT",
+				"target": {
+					"x":1,
+					"y":7
+				}
+			}]
+		},
+		{
+			"x": 0,
+			"y": 2,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 1,
+			"y": 2,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 2,
+			"y": 2,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 3,
+			"y": 2,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 4,
+			"y": 2,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 5,
+			"y": 2,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 6,
+			"y": 2,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 0,
+			"y": 3,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 1,
+			"y": 3,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 2,
+			"y": 3,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 3,
+			"y": 3,
+			"roomType": "TREE_STUMP"
+		},
+		{
+			"x": 4,
+			"y": 3,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 5,
+			"y": 3,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 6,
+			"y": 3,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 0,
+			"y": 4,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 1,
+			"y": 4,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 2,
+			"y": 4,
+			"roomType": "CRUCIFIED"
+		},
+		{
+			"x": 3,
+			"y": 4,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 4,
+			"y": 4,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 5,
+			"y": 4,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 6,
+			"y": 4,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 0,
+			"y": 5,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 1,
+			"y": 5,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 2,
+			"y": 5,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 3,
+			"y": 5,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 4,
+			"y": 5,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 5,
+			"y": 5,
+			"roomType": "PEDESTAL"
+		},
+		{
+			"x": 6,
+			"y": 5,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 0,
+			"y": 6,
+			"roomType": "CASUAL",
+			"boundaries": [{
+				"side": "UP",
+				"target": {
+					"x":5,
+					"y":0
+				}
+			},{
+				"side": "LEFT",
+				"target": {
+					"x":5,
+					"y":0
+				}
+			}]
+		},
+		{
+			"x": 1,
+			"y": 6,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 2,
+			"y": 6,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 3,
+			"y": 6,
+			"roomType": "CHURCH_BOTTOM"
+		},
+		{
+			"x": 4,
+			"y": 6,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 5,
+			"y": 6,
+			"roomType": "CASUAL"
+		},
+		{
+			"x": 6,
+			"y": 6,
+			"roomType": "BOAT_DOWN",
+			"boundaries": [{
+				"side": "RIGHT",
+				"target": null
+			}]
+		},
+		{
+			"x": 0,
+			"y": 7,
+			"roomType": "CASUAL",
+			"boundaries": [{
+				"side": "UP",
+				"target": {
+					"x":6,
+					"y":0
+				}
+			},{
+				"side": "LEFT",
+				"target": {
+					"x":6,
+					"y":0
+				}
+			}]
+		},
+		{
+			"x": 1,
+			"y": 7,
+			"roomType": "CASUAL",
+			"boundaries": [{
+				"side": "UP",
+				"target": {
+					"x":6,
+					"y":1
+				}
+			}]
+		},
+		{
+			"x": 2,
+			"y": 7,
+			"roomType": "CHURCH_LEFT"
+		},
+		{
+			"x": 3,
+			"y": 7,
+			"roomType": "CHURCH_ENTRANCE",
+			"boundaries": [{
+				"side": "UP",
+				"target": {
+					"x":3,
+					"y":8
+				}
+			}]
+		},
+		{
+			"x": 4,
+			"y": 7,
+			"roomType": "CHURCH_RIGHT",
+			"boundaries": [{
+				"side": "UP",
+				"target": null
+			}]
+		},
+		{
+			"x": 5,
+			"y": 7,
+			"roomType": "BOAT_LEFT",
+			"boundaries": [{
+				"side": "UP",
+				"target": null
+			}]
+		},
+		{
+			"x": 6,
+			"y": 7,
+			"roomType": "BOAT",
+			"boundaries": [{
+				"side": "UP",
+				"target": null
+			},{
+				"side": "RIGHT",
+				"target": null
+			}]
+		},
+		{
+			"x": 3,
+			"y": 8,
+			"roomType": "FINAL"
+		}
+	]
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="191">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+59,58,59,58,59,58,58,59,60,57,
+57,57,45,45,45,45,45,45,57,36,
+73,74,75,76,74,75,76,32,36,39,
+19,32,32,76,73,73,74,32,35,4,
+13,42,32,76,43,43,76,32,35,20,
+5,19,42,73,74,76,76,36,19,20,
+22,13,19,42,36,38,38,19,4,11,
+0,9,13,19,19,4,23,23,24,0,
+0,0,9,10,10,11,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="45" type="WALL" x="0" y="0" width="160" height="16"/>
+  <object id="47" type="EMERGED" x="29.5" y="29.75" visible="0">
+   <polygon points="-36.5,-31 -29.0795,21.2159 -19.4091,67.8863 17.3182,103 51.3068,104.807 105.005,88.5511 129.841,46.1365 133.932,-30.4091"/>
+  </object>
+  <object id="151" type="WALL" x="32" y="16" width="96" height="16"/>
+  <object id="179" type="DECO" x="131.091" y="81.3636">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PAPER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="180" type="DECO" x="118.182" y="43.1818">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PAPER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="181" type="DECO" x="38" y="96.9091">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PAPER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="182" type="DECO" x="83.8181" y="108.454">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PAPER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="183" type="POI" x="113.738" y="98.5913">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="RITUAL"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="184" type="POI" x="35.091" y="56.8182">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="BURNT_PAPER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="185" type="POI" x="80" y="64">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="BURNT_MONK"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="186" type="DECO" x="105.818" y="72.7273">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PAPER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="187" type="DECO" x="62.7273" y="94.5455">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PAPER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="188" type="DECO" x="59.2727" y="53.0909">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PAPER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="189" type="WALL" x="64.25" y="64" width="31.75" height="6"/>
+ </objectgroup>
+</map>

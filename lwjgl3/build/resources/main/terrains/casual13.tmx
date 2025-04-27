@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="91">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,25,17,0,0,0,1,2,16,0,
+1,2,2,2,2,2,12,6,8,3,
+5,29,30,30,30,30,30,30,31,7,
+5,33,34,34,34,34,34,32,35,7,
+5,33,82,83,82,82,34,34,35,7,
+5,33,43,43,43,43,32,34,35,7,
+5,37,42,36,38,38,38,38,39,7,
+9,13,37,39,4,10,10,10,10,11,
+0,9,10,10,11,0,0,21,17,27
+</data>
+ </layer>
+ <layer id="3" name="overlay" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,61,83,83,62,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="67" type="WALL" x="31" y="60" width="66" height="26"/>
+  <object id="68" type="DECO" x="114" y="74">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="BIG_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" type="PathNode" x="16" y="112">
+   <point/>
+  </object>
+  <object id="70" type="PathNode" x="80" y="112">
+   <point/>
+  </object>
+  <object id="71" type="PathNode" x="144" y="112">
+   <point/>
+  </object>
+  <object id="75" type="PathNode" x="80" y="48">
+   <point/>
+  </object>
+  <object id="76" type="PathNode" x="16" y="48">
+   <point/>
+  </object>
+  <object id="77" type="PathNode" x="144" y="48">
+   <point/>
+  </object>
+  <object id="87" type="DECO" x="47.25" y="113.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" type="DECO" x="119.75" y="29.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" type="ENEMY" x="112.5" y="106.75">
+   <point/>
+  </object>
+  <object id="90" type="EMERGED" x="107" y="12.6667">
+   <polygon points="0,0 -94.3333,10.6667 -97.6667,100 -78.6667,119.667 -38,119.333 41,103.667 42.6667,6.66667"/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="44">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="3" name="overlay" width="10" height="9">
+  <data encoding="csv">
+58,0,0,0,0,0,0,0,0,0,
+58,0,0,0,0,0,0,0,0,0,
+59,0,0,0,0,0,0,0,0,0,
+60,0,0,0,0,0,0,0,0,0,
+59,0,0,0,0,0,0,0,0,0,
+59,0,0,0,0,0,0,0,0,0,
+58,0,0,0,0,0,0,0,0,0,
+59,0,0,0,0,0,0,0,0,0,
+60,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+58,3,0,0,0,0,0,0,0,0,
+59,8,15,16,0,0,0,21,28,0,
+60,31,6,8,16,0,26,17,27,0,
+58,35,6,6,8,15,16,14,16,0,
+58,40,31,6,6,6,8,12,8,16,
+60,34,40,30,31,6,6,6,6,20,
+60,34,34,34,40,30,31,6,6,20,
+58,34,34,34,34,34,40,31,6,20,
+60,34,34,34,34,34,34,40,31,8
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="20" type="DECO" x="34" y="131">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_WOOD"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" type="DECO" x="61.5" y="122.75">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_IRON"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" type="DECO" x="88.5" y="23.75">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" type="DECO" x="90.75" y="134.5">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_WOOD"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" type="WALL" x="0" y="0" width="16" height="144"/>
+  <object id="43" type="EMERGED" x="-4" y="38">
+   <polygon points="8.75,-32.5 55.5,-8 104.75,22.75 136,18.75 154.75,37.375 163.75,106.5 7,106"/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="53">
+ <editorsettings>
+  <export target="." format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../terrains/terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="51" name="PortalEntity" x="79.8152" y="104.495">
+   <point/>
+  </object>
+  <object id="52" name="PlayerEntity" x="79.9903" y="129.525">
+   <properties>
+    <property name="behavior" value="IDLE"/>
+    <property name="direction" value="UP"/>
+    <property name="isShaded" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

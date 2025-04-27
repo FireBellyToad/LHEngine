@@ -1,0 +1,18 @@
+{
+  "name": "Discipulus",
+  "description": "A Discipulus obscuri decapitate an harmless victim (echo.victim.json)",
+  "steps": [
+    {
+      "textBoxKey": "echo.tree.first"
+    },
+    {
+    },
+    {
+      "textBoxKey": "echo.tree.second"
+    },
+    {
+    },
+    {
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttypes>
+ <objecttype name="DECO" color="#ffffff">
+  <property name="decoType" type="string" propertytype="DecoType" default="PLANT"/>
+  <property name="isEchoTrigger" type="bool" default="false"/>
+ </objecttype>
+ <objecttype name="ECHO_ACTOR" color="#ffaa00">
+  <property name="scriptActorType" type="string" propertytype="EchoesActorType" default="DISCIPULUS"/>
+ </objecttype>
+ <objecttype name="EMERGED" color="#a0a0a4">
+  <property name="blocksNodePath" type="bool" default="false"/>
+ </objecttype>
+ <objecttype name="ENEMY" color="#ff0000">
+  <property name="enemyType" type="string" propertytype="EnemyType" default="UNDEFINED,"/>
+ </objecttype>
+ <objecttype name="PathNode" color="#ffff00"/>
+ <objecttype name="POI" color="#0000ff">
+  <property name="isEchoTrigger" type="bool" default="false"/>
+  <property name="mustTriggerAfterExamination" type="bool" default="false"/>
+  <property name="poiType" type="string" propertytype="PoiType" default="SKELETON"/>
+ </objecttype>
+ <objecttype name="TRIGGER" color="#ffaa00">
+  <property name="triggerType" type="string" propertytype="TriggerType" default="CONTACT"/>
+ </objecttype>
+ <objecttype name="WALL" color="#000000"/>
+</objecttypes>

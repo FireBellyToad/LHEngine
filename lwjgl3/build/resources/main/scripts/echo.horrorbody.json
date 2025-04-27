@@ -1,0 +1,19 @@
+{
+  "name": "Willowisp spawn",
+  "description": "Willowisp spawns in the boat map",
+  "steps": [
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+      "spawn": {
+        "identifier": "WILLOWISP",
+        "y" : 8,
+        "relative": true
+      }
+    }
+  ]
+}

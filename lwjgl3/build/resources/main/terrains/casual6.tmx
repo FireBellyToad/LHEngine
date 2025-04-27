@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="50">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,1,2,2,2,3,0,
+0,0,1,2,12,29,30,31,8,3,
+1,2,12,29,30,41,34,40,31,7,
+5,29,30,41,34,34,32,34,35,7,
+5,33,34,34,59,59,34,36,39,7,
+5,37,42,32,57,57,32,35,4,11,
+9,13,37,42,34,34,34,35,7,0,
+0,9,13,37,38,38,38,4,11,0,
+0,0,9,10,10,10,10,11,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="34" type="POI" x="33.8031" y="79.1743">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="SKELETON"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" type="DECO" x="100.182" y="79.455">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" type="DECO" x="80.5455" y="70.1591">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" type="DECO" x="61.318" y="78.6364">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" type="WALL" x="64" y="64" width="32" height="22"/>
+  <object id="43" type="EMERGED" x="-14.75" y="46.75">
+   <polygon points="93.25,-36 143.75,-36 165.75,-16.5 163,36 131.25,86.75 58.5938,86.7188 26.9375,53.6875 26.875,-4.375"/>
+  </object>
+  <object id="44" type="DECO" x="16.7273" y="132.909">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" type="DECO" x="140.909" y="126.364">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="GRASS"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" type="DECO" x="18.5455" y="21.8182">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" type="DECO" x="85.5" y="122">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="IMPALED"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" type="DECO" x="123.75" y="52.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="IMPALED"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

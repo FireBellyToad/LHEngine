@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="35">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,25,28,0,0,
+25,17,28,0,0,0,26,14,16,0,
+26,21,17,28,0,0,25,22,24,28,
+0,26,26,14,15,16,21,27,26,21,
+25,28,21,18,19,8,15,16,16,0,
+17,17,17,22,13,19,19,20,0,0,
+26,17,17,17,18,4,23,24,0,0,
+0,26,26,17,22,24,27,21,21,0,
+0,0,0,26,21,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="22" type="DECO" x="78.25" y="25.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" type="DECO" x="144.75" y="99.5">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" type="DECO" x="96.75" y="92.5">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="BIG_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" type="ENEMY" x="67.5" y="72.5">
+   <point/>
+  </object>
+  <object id="26" type="EMERGED" x="51.125" y="92.625">
+   <polygon points="7,-34 33.3182,-33.9091 36.7841,-21.1136 67,-17.8182 67.3409,11.3636 37.2273,7.86364 28.2727,30.9091 9.51136,-7.92045"/>
+  </object>
+  <object id="29" type="EMERGED" x="115.636" y="61.8182">
+   <polygon points="5,-36.25 19.9318,-37.7273 20.8182,-21.0909 5.54543,-21.2727"/>
+  </object>
+  <object id="30" type="DECO" x="127.636" y="31.4545">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" type="PathNode" x="109.818" y="63.0909">
+   <point/>
+  </object>
+  <object id="32" type="PathNode" x="64" y="112">
+   <point/>
+  </object>
+  <object id="33" type="PathNode" x="64" y="64">
+   <point/>
+  </object>
+  <object id="34" type="PathNode" x="128" y="112">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="69">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+60,32,34,34,34,34,34,34,40,31,
+59,32,34,34,34,34,34,34,34,40,
+59,32,34,34,34,34,34,34,32,34,
+58,32,34,32,34,34,34,34,34,34,
+58,32,34,32,32,32,34,34,34,34,
+59,32,34,34,32,32,32,34,34,34,
+58,32,32,34,34,34,34,34,34,34,
+59,32,32,32,32,32,32,32,32,32,
+58,59,60,59,58,59,60,59,60,60
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="20" type="DECO" x="35.8333" y="84.2292">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_WOOD"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" type="DECO" x="52.75" y="34.5">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_IRON"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" type="DECO" x="131.083" y="97">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_IRON"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" type="DECO" x="69.25" y="113.917">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_WOOD"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" type="DECO" x="111.667" y="62.5833">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_IRON"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" type="DECO" x="82.8333" y="51.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_WOOD"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" type="WALL" x="0" y="0" width="16" height="144"/>
+  <object id="48" type="WALL" x="16" y="128" width="144" height="16"/>
+  <object id="49" type="POI" x="70.4773" y="79.0227">
+   <properties>
+    <property name="isEchoTrigger" type="bool" value="true"/>
+    <property name="poiType" propertytype="PoiType" value="SOIL"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" type="EMERGED" x="-2" y="37.5" visible="0">
+   <polygon points="13.8409,-41.7727 167.25,-38.25 164.114,95.2955 15.5682,93.5227"/>
+  </object>
+  <object id="56" type="ECHO_ACTOR" x="100" y="108">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" type="ECHO_ACTOR" x="104.182" y="21.2727">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_DOUBLE_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" type="ECHO_ACTOR" x="143.273" y="55.8182">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" type="ECHO_ACTOR" x="29.6364" y="30.1818">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" type="ECHO_ACTOR" x="30" y="103.818">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" type="ECHO_ACTOR" x="146.727" y="119.091">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" type="ECHO_ACTOR" x="122.727" y="24">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" type="ECHO_ACTOR" x="94.7273" y="60.7273">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" type="ECHO_ACTOR" x="124" y="71.4545">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_DOUBLE_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" type="ECHO_ACTOR" x="36" y="48.1818">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_DOUBLE_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" type="ECHO_ACTOR" x="120.182" y="122">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_DOUBLE_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" type="ECHO_ACTOR" x="47.0909" y="119.091">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="DEAD_DOUBLE_HAND"/>
+    <property name="triggeredById" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" type="TRIGGER" x="48" y="32" width="80" height="64">
+   <properties>
+    <property name="referencedInstanceId" type="int" value="49"/>
+    <property name="triggerType" propertytype="TriggerType" value="CONTACT"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

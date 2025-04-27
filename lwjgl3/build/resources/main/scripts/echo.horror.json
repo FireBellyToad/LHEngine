@@ -1,0 +1,55 @@
+{
+  "name": "Horror",
+  "description": "Darkness stays until Willowisp created by (echo.horrorbody.json) is killed",
+  "steps": [
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+      "useAnimationOfStep": 0,
+      "goTo" :{
+        "checkOnEveryFrame": true,
+        "end": true,
+        "ifNoKillableAlive":"WILLOWISP"
+      }
+    },
+    {
+      "useAnimationOfStep": 1,
+      "goTo" :{
+        "checkOnEveryFrame": true,
+        "end": true,
+        "ifNoKillableAlive":"WILLOWISP"
+      }
+    },
+    {
+      "useAnimationOfStep": 2,
+      "goTo" :{
+        "checkOnEveryFrame": true,
+        "end": true,
+        "ifNoKillableAlive":"WILLOWISP"
+      }
+    },
+    {
+      "useAnimationOfStep": 3,
+      "goTo" :{
+        "checkOnEveryFrame": true,
+        "end": true,
+        "ifNoKillableAlive":"WILLOWISP"
+      }
+    },
+    {
+      "useAnimationOfStep": 4,
+      "goTo" :{
+        "step": 4,
+        "ifAtLeastOneKillableAlive": "WILLOWISP"
+      }
+    }
+  ]
+}

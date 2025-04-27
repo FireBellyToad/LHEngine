@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="110">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+1,2,2,2,2,2,3,0,0,0,
+5,29,30,30,30,31,8,3,0,0,
+5,33,76,76,76,35,19,8,3,0,
+5,33,76,34,76,35,19,19,8,3,
+5,33,76,76,76,40,30,30,31,7,
+5,37,42,73,85,86,85,86,35,7,
+9,13,37,42,73,85,86,75,35,7,
+0,0,13,37,38,38,38,38,39,7,
+0,0,9,10,10,10,10,10,10,11
+</data>
+ </layer>
+ <layer id="3" name="overlay" class="EMERGED" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="98" type="POI" x="55.8449" y="55.9778">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="SKELETON"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" type="DECO" x="133.125" y="24.75">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" type="DECO" x="29.25" y="130.375">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" type="ENEMY" x="107.75" y="97">
+   <point/>
+  </object>
+  <object id="104" type="EMERGED" x="14" y="11.5">
+   <polygon points="0,0 84.75,0.625 133.375,48.375 134.375,121.5 48.625,120.875 -3,88"/>
+  </object>
+  <object id="105" type="DECO" x="106.625" y="51.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="BOAT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" type="PathNode" x="134.75" y="68.125">
+   <point/>
+  </object>
+  <object id="107" type="PathNode" x="82.5" y="67.875">
+   <point/>
+  </object>
+  <object id="108" type="PathNode" x="82.375" y="23.375">
+   <point/>
+  </object>
+  <object id="109" type="PathNode" x="138.375" y="23">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

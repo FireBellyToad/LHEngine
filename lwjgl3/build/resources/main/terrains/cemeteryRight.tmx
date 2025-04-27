@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="47">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+8,15,15,16,0,21,0,0,0,0,
+30,30,31,8,3,0,0,25,21,0,
+34,34,40,31,8,15,3,21,27,0,
+34,34,34,40,30,31,8,3,25,21,
+34,34,34,34,34,40,31,20,17,27,
+121,121,121,121,121,121,35,8,15,3,
+34,34,34,34,34,34,40,30,31,20,
+34,34,34,34,34,34,34,34,35,20,
+58,59,58,60,60,59,59,58,60,58
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="20" type="DECO" x="19.2738" y="108.65">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_WOOD"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" type="DECO" x="26.5" y="55.75">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_IRON"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" type="DECO" x="60.1724" y="74.1503">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_WOOD"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" type="DECO" x="94.0733" y="117.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_IRON"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" type="DECO" x="58.2483" y="117.75">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="CROSS_WOOD"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" type="WALL" x="0" y="128" width="160" height="16"/>
+  <object id="37" type="EMERGED" x="-4.16667" y="36.1667">
+   <polygon points="3.40859,-37.2452 56.5,-25.5 104.75,10 121,28 152.125,58.125 159.75,107 3.75,106.25"/>
+  </object>
+  <object id="38" type="DECO" x="133.203" y="137.045">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" type="DECO" x="78.613" y="145.818">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" type="DECO" x="149.863" y="143.272">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" type="DECO" x="106.5" y="150">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" type="DECO" x="114" y="142">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" type="DECO" x="27" y="143.5">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_2"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

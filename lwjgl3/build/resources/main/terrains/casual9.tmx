@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="56">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,3,
+5,30,30,30,30,30,30,30,31,7,
+5,84,68,68,34,34,32,32,35,7,
+5,42,86,86,74,32,43,43,35,7,
+5,33,34,34,85,73,32,34,35,7,
+5,37,42,34,34,91,93,34,35,7,
+9,13,37,42,34,97,99,68,35,7,
+0,9,13,37,38,38,38,38,39,7,
+0,0,9,10,10,10,10,10,10,11
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="44" type="EMERGED" x="-23.5" y="48.25" visible="0">
+   <polygon points="172.306,-36.1998 172.828,85.3454 69.6209,83.7432 36.4629,51.9091 36.9259,-37.0119"/>
+  </object>
+  <object id="53" type="WALL" x="96.3199" y="47.7597" width="31.2279" height="6"/>
+  <object id="54" type="DECO" x="52.8601" y="91.0174">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" type="DECO" x="125.149" y="87.3417">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

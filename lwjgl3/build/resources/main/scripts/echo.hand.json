@@ -1,0 +1,31 @@
+{
+  "name": "Buried hand",
+  "description": "Buried hand in cemetery claws the air",
+  "steps": [
+    {
+    },
+    {
+      "move" : {
+        "direction": "UP",
+        "speed": 2
+      }
+    },
+    {
+      "move" : {
+        "direction": "DOWN",
+        "speed": 4
+      }
+    },
+    {
+      "move" : {
+        "direction": "UP",
+        "speed": 2
+      }
+    },
+    {
+      "goTo" :{
+        "step": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="89">
+ <editorsettings>
+  <export target="." format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../terrains/terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,81,81,0,0,81,81,0,
+0,0,0,81,81,0,0,81,81,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,81,81,0,0,81,81,0,
+0,0,0,81,81,0,0,81,81,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="50" name="PlayerEntity" x="62.9167" y="54.916">
+   <properties>
+    <property name="behavior" value="WALK"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="PlayerEntity" x="128.917" y="55.916">
+   <properties>
+    <property name="behavior" value="ATTACK"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="PlayerEntity" type="BUSH" x="64.6667" y="118.666">
+   <properties>
+    <property name="behavior" value="IDLE"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="PlayerEntity" x="129.167" y="115.416">
+   <properties>
+    <property name="behavior" value="KNEE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="PlayerEntity" x="62.9167" y="54.916">
+   <properties>
+    <property name="behavior" value="WALK"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="TutorialEntity" x="95.917" y="103.166">
+   <properties>
+    <property name="behavior" value="KNEE"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="TutorialEntity" x="95.917" y="124.666">
+   <properties>
+    <property name="behavior" value="KNEE"/>
+    <property name="direction" value="UP"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="POIEntity" type="BUSH" x="64.5" y="126">
+   <properties>
+    <property name="mustFlicker" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="TutorialEntity" x="25.6667" y="123.666">
+   <properties>
+    <property name="behavior" value="IDLE"/>
+    <property name="direction" value="UP"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="TutorialEntity" x="25.6667" y="102.166">
+   <properties>
+    <property name="behavior" value="IDLE"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="TutorialEntity" x="25.6667" y="60.666">
+   <properties>
+    <property name="behavior" value="WALK"/>
+    <property name="direction" value="UP"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="TutorialEntity" x="25.6667" y="39.166">
+   <properties>
+    <property name="behavior" value="WALK"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="TutorialEntity" x="97.667" y="60.666">
+   <properties>
+    <property name="behavior" value="ATTACK"/>
+    <property name="direction" value="UP"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="TutorialEntity" x="97.667" y="39.166">
+   <properties>
+    <property name="behavior" value="ATTACK"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

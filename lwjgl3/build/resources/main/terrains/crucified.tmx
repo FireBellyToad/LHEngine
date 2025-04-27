@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="40">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,14,15,2,15,2,2,15,16,0,
+0,18,29,30,30,30,30,31,20,21,
+21,18,33,32,91,93,32,35,20,27,
+26,18,33,32,97,99,32,35,7,0,
+0,5,33,32,43,43,32,35,20,21,
+0,18,37,38,38,38,38,39,20,26,
+21,22,23,10,23,23,10,23,24,0,
+26,28,0,0,21,28,0,26,14,16,
+0,27,0,0,0,0,0,0,22,24
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="28" type="POI" x="79.3864" y="57.8864">
+   <properties>
+    <property name="isEchoTrigger" type="bool" value="false"/>
+    <property name="poiType" propertytype="PoiType" value="CADAVER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" type="EMERGED" x="-20" y="-27.5">
+   <polygon points="46.477,37.0909 152.33,38.1705 152.727,128.722 46.3636,128.193"/>
+  </object>
+  <object id="32" type="EMERGED" x="41.75" y="44">
+   <polygon points="95.727,76.3409 110.08,77.6705 108.727,91.472 94.8636,91.193"/>
+  </object>
+  <object id="33" type="WALL" x="63.5" y="56.6818" width="32.5" height="13.3182"/>
+  <object id="34" type="ECHO_ACTOR" x="9.81817" y="89.2727">
+   <properties>
+    <property name="scriptActorType" propertytype="EchoesActorType" value="WOMAN"/>
+    <property name="triggeredById" type="int" value="39"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" type="DECO" x="128" y="95">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="IMPALED"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" type="DECO" x="35" y="95">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="IMPALED"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" type="TRIGGER" x="48" y="32" width="64" height="64">
+   <properties>
+    <property name="triggerType" propertytype="TriggerType"  value="CONTACT"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

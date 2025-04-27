@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="67">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,3,0,
+5,29,30,30,30,31,19,19,7,0,
+5,33,75,74,32,40,30,31,7,0,
+5,33,73,73,76,73,73,35,7,0,
+5,33,49,49,73,53,54,35,7,0,
+5,33,43,43,32,43,43,35,7,0,
+5,37,38,38,38,38,38,39,7,0,
+9,10,10,10,10,10,10,10,11,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="overlay" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,61,62,0,61,62,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="43" type="EMERGED" x="-16.375" y="46.8182" visible="0">
+   <polygon points="59.4318,-35.8182 147.386,-34.9091 148.818,69.2727 26.7557,70.0511 27.4205,-18.5568 58.6989,-21.3693"/>
+  </object>
+  <object id="44" type="DECO" x="101.432" y="34.2386">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" type="DECO" x="16.7727" y="114.103">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="GRASS"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" type="DECO" x="126.92" y="91.6363">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" type="WALL" x="30.8977" y="58.9659" width="34.4659" height="26.7841"/>
+  <object id="51" type="DECO" x="115.091" y="133.272">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="GRASS"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" type="ENEMY" x="70.75" y="65">
+   <point/>
+  </object>
+  <object id="57" type="DECO" x="43" y="37">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="IMPALED"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" type="WALL" x="78.5852" y="59.2443" width="34.4659" height="26.7841"/>
+  <object id="59" type="PathNode" x="71.75" y="102.25">
+   <point/>
+  </object>
+  <object id="62" type="PathNode" x="72.3636" y="48.7273">
+   <point/>
+  </object>
+  <object id="63" type="PathNode" x="128" y="48">
+   <point/>
+  </object>
+  <object id="64" type="PathNode" x="128" y="96">
+   <point/>
+  </object>
+  <object id="65" type="PathNode" x="21.6364" y="95.6364">
+   <point/>
+  </object>
+  <object id="66" type="PathNode" x="20.3636" y="48.5455">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

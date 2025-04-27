@@ -1,0 +1,57 @@
+{
+  "name": "Infernum",
+  "description": "The landscape goes hellish and with corrosive atmosphere",
+  "steps": [
+    {
+      "invisible": true,
+      "renderOnlyMapLayer": "ECHO_LAYER"
+    },
+    {
+      "invisible": true,
+      "renderOnlyMapLayer": "ECHO_LAYER",
+      "goTo" :{
+        "checkOnEveryFrame": true,
+        "end": true,
+        "ifPlayerDamageIsMoreThan":5,
+        "ifNoKillableAlive":"ESCAPE_PORTAL",
+        "onlyOneConditionMustBeTrue": true
+      }
+    },
+    {
+      "invisible": true,
+      "renderOnlyMapLayer": "ECHO_LAYER",
+      "goTo" :{
+        "end": true,
+        "checkOnEveryFrame": true,
+        "ifPlayerDamageIsMoreThan":5,
+        "ifNoKillableAlive":"ESCAPE_PORTAL",
+        "onlyOneConditionMustBeTrue": true
+      },
+      "hurtPlayer": {
+        "damage": 1,
+        "canKillPlayer": false
+      }
+    },
+    {
+      "invisible": true,
+      "renderOnlyMapLayer": "ECHO_LAYER",
+      "goTo" :{
+        "end": true,
+        "checkOnEveryFrame": true,
+        "ifPlayerDamageIsMoreThan":5,
+        "ifNoKillableAlive":"ESCAPE_PORTAL",
+        "onlyOneConditionMustBeTrue": true
+      }
+    },{
+      "invisible": true,
+      "renderOnlyMapLayer": "ECHO_LAYER",
+      "goTo" :{
+        "step": 1,
+        "checkOnEveryFrame": true,
+        "ifPlayerDamageIsLessThan":5,
+        "ifAtLeastOneKillableAlive":"ESCAPE_PORTAL",
+        "onlyOneConditionMustBeTrue": true
+      }
+    }
+  ]
+}

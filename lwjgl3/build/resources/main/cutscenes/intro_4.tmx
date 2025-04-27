@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="65">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../terrains/terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,17,18,19,19,19,19,20,28,0,
+0,14,12,29,30,30,31,8,3,0,
+0,5,19,33,34,34,35,19,7,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="50" name="PlayerEntity" x="80" y="103">
+   <properties>
+    <property name="behavior" value="IDLE"/>
+    <property name="direction" value="DOWN"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="DecorationEntity" type="STONE_1" x="46.9756" y="141.659">
+   <point/>
+  </object>
+  <object id="56" name="DecorationEntity" type="STONE_1" x="113.636" y="141.182">
+   <point/>
+  </object>
+  <object id="57" name="DecorationEntity" type="STONE_2" x="58.7273" y="137">
+   <point/>
+  </object>
+  <object id="58" name="DecorationEntity" type="STONE_2" x="77.2727" y="143.545">
+   <point/>
+  </object>
+  <object id="59" name="DecorationEntity" type="STONE_1" x="23.6364" y="146.636">
+   <point/>
+  </object>
+  <object id="60" name="DecorationEntity" type="STONE_2" x="95.6364" y="132.455">
+   <point/>
+  </object>
+  <object id="62" name="DecorationEntity" type="ALLY_CORPSE_1" x="54.9091" y="102.545">
+   <point/>
+  </object>
+  <object id="63" name="DecorationEntity" type="ALLY_CORPSE_2" x="106.909" y="103.091">
+   <point/>
+  </object>
+  <object id="64" name="HalfDarknessEntity" x="22" y="138">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

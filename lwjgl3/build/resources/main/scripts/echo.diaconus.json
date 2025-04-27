@@ -1,0 +1,22 @@
+{
+  "name": "Diaconus spawn",
+  "description": "Diaconus spawns in the altar map",
+  "steps": [
+    {
+    },
+    {
+      "useAnimationOfStep": 0
+    },
+    {
+    },
+    {
+    },
+    {
+      "spawn": {
+        "identifier": "DIACONUS",
+        "y" : 4,
+        "relative": true
+      }
+    }
+  ]
+}

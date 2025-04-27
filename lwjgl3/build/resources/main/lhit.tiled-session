@@ -1,0 +1,386 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "terrains/start.tmx",
+    "expandedProjectPaths": [
+        "cutscenes",
+        "terrains"
+    ],
+    "file.lastUsedOpenFilter": "Tutti i file (*)",
+    "fileStates": {
+        "terrains/boat.tmx": {
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.71191135734072,
+                "y": 69.80609418282549
+            }
+        },
+        "terrains/boatDown.tmx": {
+            "scale": 7.520833333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80.11080332409972,
+                "y": 72.06648199445983
+            }
+        },
+        "terrains/boatLeft.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.91135734072023,
+                "y": 72
+            }
+        },
+        "terrains/casual1.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 199.11357340720224,
+                "y": 106.50415512465375
+            }
+        },
+        "terrains/casual10.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual11.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual12.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual13.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual14.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 8,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 186.8125,
+                "y": 104.5
+            }
+        },
+        "terrains/casual15.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 8,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 186.8125,
+                "y": 104.5
+            }
+        },
+        "terrains/casual16.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual2.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual3.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual4.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual5.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual6.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual7.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual8.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/casual9.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/cemeteryCenter.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.91135734072023,
+                "y": 72
+            }
+        },
+        "terrains/cemeteryRight.tmx": {
+            "scale": 7.520833333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 79.91135734072023,
+                "y": 72
+            }
+        },
+        "terrains/churchEntrance.tmx": {
+            "scale": 7.520833333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 79.91135734072023,
+                "y": 72
+            }
+        },
+        "terrains/churchLeft.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.91135734072023,
+                "y": 72
+            }
+        },
+        "terrains/crucified.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.527430555555555,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 83.02966003966972,
+                "y": 71.80405000230638
+            }
+        },
+        "terrains/infernum.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 79.91135734072023,
+                "y": 72
+            }
+        },
+        "terrains/pedestal.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.8448753462604,
+                "y": 71.93351800554017
+            }
+        },
+        "terrains/scriptTestChamber.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.91135734072023,
+                "y": 72
+            }
+        },
+        "terrains/start.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.71191135734074,
+                "y": 71.80055401662051
+            }
+        },
+        "terrains/startRight.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 7.520833333333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 193.52908587257616,
+                "y": 106.63711911357342
+            }
+        },
+        "terrains/terrain.tsx": {
+            "scaleInDock": 1
+        },
+        "terrains/treeStump.tmx": {
+            "scale": 7.527430555555555,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 79.97416855020988,
+                "y": 71.93689745836986
+            }
+        }
+    },
+    "last.objectTypesPath": "E:/Repositories/LHEngine/core/assets/extensions/propertytypes.json",
+    "map.fixedSize": true,
+    "map.height": 9,
+    "map.lastUsedExportFilter": "Tiled map files (*.tmx *.xml)",
+    "map.orientation": 1,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 10,
+    "openFiles": [
+        "terrains/casual1.tmx",
+        "terrains/casual2.tmx",
+        "terrains/casual3.tmx",
+        "terrains/casual4.tmx",
+        "terrains/casual5.tmx",
+        "terrains/casual6.tmx",
+        "terrains/casual7.tmx",
+        "terrains/casual9.tmx",
+        "terrains/casual8.tmx",
+        "terrains/casual10.tmx",
+        "terrains/casual11.tmx",
+        "terrains/casual12.tmx",
+        "terrains/casual13.tmx",
+        "terrains/casual14.tmx",
+        "terrains/casual15.tmx",
+        "terrains/casual16.tmx",
+        "terrains/startRight.tmx",
+        "terrains/start.tmx"
+    ],
+    "project": "lhit.tiled-project",
+    "property.type": "int",
+    "recentFiles": [
+        "terrains/casual1.tmx",
+        "terrains/casual2.tmx",
+        "terrains/casual3.tmx",
+        "terrains/casual4.tmx",
+        "terrains/casual5.tmx",
+        "terrains/casual6.tmx",
+        "terrains/casual7.tmx",
+        "terrains/casual9.tmx",
+        "terrains/casual8.tmx",
+        "terrains/casual10.tmx",
+        "terrains/casual11.tmx",
+        "terrains/casual12.tmx"
+    ],
+    "tileset.embedInMap": false,
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.transparentColor": "#ff00ff",
+    "tileset.type": 0,
+    "tileset.useTransparentColor": false
+}

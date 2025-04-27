@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="121">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,3,
+5,29,30,30,30,30,30,30,31,7,
+5,33,76,32,32,76,82,83,35,7,
+5,33,32,76,32,32,43,43,35,7,
+5,33,34,34,32,76,32,76,35,7,
+5,33,53,54,76,32,88,87,35,7,
+5,33,43,43,32,32,89,90,35,7,
+5,37,38,38,38,38,38,38,39,7,
+9,10,10,10,10,10,10,10,10,11
+</data>
+ </layer>
+ <layer id="3" name="overlay" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,61,62,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,61,62,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="106" type="POI" x="78.0499" y="67.2798">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="BUSH"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" type="ENEMY" x="112.089" y="96.2659">
+   <point/>
+  </object>
+  <object id="109" type="PathNode" x="73.662" y="113.95">
+   <point/>
+  </object>
+  <object id="110" type="PathNode" x="22.072" y="114.482">
+   <point/>
+  </object>
+  <object id="111" type="PathNode" x="22.338" y="72.1994">
+   <point/>
+  </object>
+  <object id="112" type="PathNode" x="72.9972" y="67.9446">
+   <point/>
+  </object>
+  <object id="113" type="PathNode" x="138.814" y="58.5042">
+   <point/>
+  </object>
+  <object id="114" type="PathNode" x="138.548" y="18.7479">
+   <point/>
+  </object>
+  <object id="115" type="PathNode" x="85.6288" y="18.482">
+   <point/>
+  </object>
+  <object id="116" type="PathNode" x="86.5596" y="61.4294">
+   <point/>
+  </object>
+  <object id="117" type="EMERGED" x="12.2327" y="10.903">
+   <polygon points="0,0 135.889,0.930748 135.756,120.332 0.132964,121.263"/>
+  </object>
+  <object id="118" type="WALL" x="96.3989" y="27.7895" width="31.7784" height="23.0028"/>
+  <object id="120" type="WALL" x="31.8449" y="76.1884" width="31.7784" height="22.205"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="98">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,14,16,0,0,0,25,14,16,0,
+0,22,24,0,0,0,27,18,20,0,
+0,0,0,0,0,0,0,22,24,0,
+1,2,2,2,2,3,0,0,0,0,
+5,123,123,123,127,8,2,2,3,0,
+9,10,10,10,13,123,123,123,7,0,
+0,0,0,0,9,10,10,10,11,0,
+0,14,15,16,27,0,0,25,17,0,
+25,22,23,24,0,25,17,27,27,0
+</data>
+ </layer>
+ <layer id="3" name="overlay" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="93" type="DECO" x="73.8006" y="71.3324">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="IMPALED"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" type="EMERGED" x="24.625" y="120.5">
+   <polygon points="0,0 29.875,2.125 29,13.875 0.875,12.875"/>
+  </object>
+  <object id="95" type="EMERGED" x="11.375" y="58.625">
+   <polygon points="1.25,0.875 71.25,1.875 78,15.375 120.5,16.875 119.125,42.125 67.125,42.875 62.625,27.625 0.875,25.875"/>
+  </object>
+  <object id="96" type="EMERGED" x="26.75" y="8">
+   <polygon points="0,0 12.75,3 10.375,14.25 -2,13"/>
+  </object>
+  <object id="97" type="EMERGED" x="122.5" y="10.375">
+   <polygon points="0,0 13,1.375 11.125,28.125 -1,27"/>
+  </object>
+ </objectgroup>
+</map>

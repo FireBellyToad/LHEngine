@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="37">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,0,25,14,15,16,28,0,0,0,
+0,14,16,21,13,8,15,15,3,0,
+25,18,20,17,22,13,19,19,20,28,
+14,12,20,17,21,22,13,19,8,16,
+22,13,8,16,17,21,22,13,19,20,
+0,22,13,8,16,21,17,22,23,24,
+0,0,22,13,8,15,15,16,21,27,
+0,0,26,22,23,23,23,27,27,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="32" type="DECO" x="116" y="43.6364">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" type="DECO" x="21.0909" y="122.909">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="GRASS"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" type="EMERGED" x="57.8182" y="47.0909">
+   <polygon points="-2.45114,-37.1754 28.8495,-35.6777 28.7671,-22.2259 71.7232,-20.6784 91.75,11.5 92.25,39.75 66.5,38.75 14.5465,-11.4033"/>
+  </object>
+  <object id="35" type="EMERGED" x="1.5" y="85.25">
+   <polygon points="25.75,-58 36.25,-57.75 36.4367,-18.6358 82.8322,21.0035 116.325,21.5746 109.75,32.25 60.25,31.25 9.2992,-21.1499"/>
+  </object>
+  <object id="36" type="ENEMY" x="79.2901" y="74.3892">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

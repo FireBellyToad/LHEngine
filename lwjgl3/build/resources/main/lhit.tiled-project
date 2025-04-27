@@ -1,0 +1,278 @@
+{
+    "automappingRulesFile": "",
+    "commands": [
+    ],
+    "extensionsPath": "extensions",
+    "folders": [
+        "cutscenes",
+        "terrains"
+    ],
+    "properties": [
+    ],
+    "propertyTypes": [
+        {
+            "color": "#ffffffff",
+            "drawFill": true,
+            "id": 6,
+            "members": [
+                {
+                    "name": "decoType",
+                    "propertyType": "DecoType",
+                    "type": "string",
+                    "value": "PLANT"
+                },
+                {
+                    "name": "isEchoTrigger",
+                    "type": "bool",
+                    "value": false
+                }
+            ],
+            "name": "DECO",
+            "type": "class",
+            "useAs": [
+                "object",
+                "tile"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "DecoType",
+            "storageType": "string",
+            "type": "enum",
+            "values": [
+                "PLANT",
+                "CROSS_WOOD",
+                "CROSS_IRON",
+                "STONE_1",
+                "STONE_2",
+                "GRASS",
+                "TREE_STUMP",
+                "BOAT",
+                "ALLY_CORPSE_1",
+                "ALLY_CORPSE_2",
+                "TUMOR",
+                "IMPALED",
+                "DEAD_TREE",
+                "PAPER",
+                "BIG_TREE",
+                ""
+            ],
+            "valuesAsFlags": false
+        },
+        {
+            "color": "#ffffaa00",
+            "drawFill": true,
+            "id": 7,
+            "members": [
+                {
+                    "name": "scriptActorType",
+                    "propertyType": "ScriptsActorType",
+                    "type": "string",
+                    "value": "DISCIPULUS"
+                },
+                {
+                    "name": "triggeredById",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "ECHO_ACTOR",
+            "type": "class",
+            "useAs": [
+                "object",
+                "tile"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 8,
+            "members": [
+                {
+                    "name": "blocksNodePath",
+                    "type": "bool",
+                    "value": false
+                }
+            ],
+            "name": "EMERGED",
+            "type": "class",
+            "useAs": [
+                "object",
+                "tile"
+            ]
+        },
+        {
+            "color": "#ffff0000",
+            "drawFill": true,
+            "id": 9,
+            "members": [
+                {
+                    "name": "enemyType",
+                    "propertyType": "EnemyType",
+                    "type": "string",
+                    "value": "UNDEFINED,"
+                }
+            ],
+            "name": "ENEMY",
+            "type": "class",
+            "useAs": [
+                "object",
+                "tile"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "EnemyType",
+            "storageType": "string",
+            "type": "enum",
+            "values": [
+                "UNDEFINED",
+                "STRIX",
+                "BOUNDED",
+                "HIVE",
+                "SPITTER",
+                "MEAT",
+                "PORTAL",
+                "WILLOWISP",
+                "ESCAPE_PORTAL",
+                "DIACONUS"
+            ],
+            "valuesAsFlags": false
+        },
+        {
+            "color": "#ffffff00",
+            "drawFill": true,
+            "id": 10,
+            "members": [
+            ],
+            "name": "PathNode",
+            "type": "class",
+            "useAs": [
+                "object",
+                "tile"
+            ]
+        },
+        {
+            "color": "#ff0000ff",
+            "drawFill": true,
+            "id": 11,
+            "members": [
+                {
+                    "name": "isEchoTrigger",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "mustTriggerAfterExamination",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "poiType",
+                    "propertyType": "PoiType",
+                    "type": "string",
+                    "value": "SKELETON"
+                }
+            ],
+            "name": "POI",
+            "type": "class",
+            "useAs": [
+                "object",
+                "tile"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "PoiType",
+            "storageType": "string",
+            "type": "enum",
+            "values": [
+                "SKELETON",
+                "BUSH",
+                "SOIL",
+                "CADAVER",
+                "BROTHER",
+                "ECHO_CORPSE",
+                "BURNT_PAPER",
+                "BAPTISMAL",
+                "BURNT_MONK",
+                "ALTAR",
+                "WATERSKIN",
+                "PARCHMENT",
+                "RITUAL",
+                "MICHAEL",
+                "PLEA"
+            ],
+            "valuesAsFlags": false
+        },
+        {
+            "id": 3,
+            "name": "ScriptsActorType",
+            "storageType": "string",
+            "type": "enum",
+            "values": [
+                "DISCIPULUS",
+                "VICTIM",
+                "WOMAN",
+                "DEAD_HAND",
+                "DEAD_DOUBLE_HAND",
+                "HORROR",
+                "HORROR_BODY",
+                "INFERNUM",
+                "FLESH_PILLAR",
+                "PORTAL_SPAWNER",
+                "SECRET",
+                "DIACONUS"
+            ],
+            "valuesAsFlags": false
+        },
+        {
+            "color": "#ffffaa00",
+            "drawFill": true,
+            "id": 12,
+            "members": [
+                {
+                    "name": "referencedInstanceId",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "triggerType",
+                    "propertyType": "TriggerType",
+                    "type": "string",
+                    "value": "CONTACT"
+                }
+            ],
+            "name": "TRIGGER",
+            "type": "class",
+            "useAs": [
+                "object",
+                "tile"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "TriggerType",
+            "storageType": "string",
+            "type": "enum",
+            "values": [
+                "CONTACT",
+                "USE"
+            ],
+            "valuesAsFlags": false
+        },
+        {
+            "color": "#ff000000",
+            "drawFill": true,
+            "id": 13,
+            "members": [
+            ],
+            "name": "WALL",
+            "type": "class",
+            "useAs": [
+                "object",
+                "tile"
+            ]
+        }
+    ]
+}

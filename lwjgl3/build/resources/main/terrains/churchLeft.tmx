@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="26">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+42,57,58,59,60,58,59,60,60,49,
+37,42,57,57,57,57,57,57,57,45,
+26,13,38,38,38,38,38,42,34,49,
+0,21,26,13,19,19,6,33,34,45,
+0,0,0,9,23,13,19,37,42,49,
+0,21,28,25,17,14,19,19,33,43,
+0,0,26,17,27,9,23,13,37,42,
+0,0,0,26,0,26,17,18,19,37,
+0,0,0,0,0,0,26,9,10,13
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="22" type="WALL" x="144" y="0" width="16" height="86"/>
+  <object id="23" type="WALL" x="0" y="-0.5" width="144" height="16"/>
+  <object id="24" type="EMERGED" x="-4" y="38">
+   <polygon points="3.5,-38 164.058,-38.0481 163.904,107.442 127.832,92.4325 97.047,60.1054 87.8366,42.5292 3.83558,-5.95703"/>
+  </object>
+  <object id="25" type="POI" x="125" y="44">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="WATERSKIN"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

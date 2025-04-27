@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="76">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+72,71,72,45,45,49,71,72,71,72,
+71,69,69,70,67,68,70,69,70,71,
+72,70,69,69,71,72,69,70,69,71,
+45,70,67,68,69,70,67,70,69,49,
+45,67,67,67,69,70,67,68,70,49,
+45,70,69,69,69,70,69,68,67,45,
+72,69,70,68,68,68,69,69,70,72,
+72,69,69,70,68,68,70,69,69,71,
+72,72,71,71,65,66,45,72,71,71
+</data>
+ </layer>
+ <layer id="4" name="overlay" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="43" type="EMERGED" x="-29.625" y="32.3182" visible="0">
+   <polygon points="192.136,-34.1591 190.318,114.023 28.5057,114.301 27.6705,-33.0568"/>
+  </object>
+  <object id="56" type="ENEMY" x="80.25" y="74.25">
+   <properties>
+    <property name="enemyType" propertytype="EnemyType" value="SPITTER"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" type="ENEMY" x="129.773" y="117.454">
+   <properties>
+    <property name="enemyType" propertytype="EnemyType" value="HIVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" type="ENEMY" x="131.614" y="33.9318">
+   <properties>
+    <property name="enemyType" propertytype="EnemyType" value="HIVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" type="ENEMY" x="25.7727" y="122.386">
+   <properties>
+    <property name="enemyType" propertytype="EnemyType" value="HIVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" type="ENEMY" x="26.6818" y="38.8864">
+   <properties>
+    <property name="enemyType" propertytype="EnemyType" value="HIVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" type="WALL" x="0.5" y="127.5" width="144" height="16"/>
+  <object id="63" type="WALL" x="15.5" y="-0.5" width="144" height="16"/>
+  <object id="65" type="WALL" x="0.5" y="127.5" width="144" height="16"/>
+  <object id="66" type="WALL" x="0.5" y="127.5" width="144" height="16"/>
+  <object id="68" type="WALL" x="0" y="0" width="16" height="128"/>
+  <object id="69" type="WALL" x="144.5" y="15.5" width="16" height="128"/>
+  <object id="70" type="DECO" x="100.25" y="104">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="TUMOR"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" type="DECO" x="48.25" y="45.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="TUMOR"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" type="DECO" x="133.75" y="66.25">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="TUMOR"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" type="DECO" x="49.25" y="118">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="TUMOR"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

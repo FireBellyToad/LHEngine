@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="74">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,0,1,2,2,2,2,3,0,0,
+0,1,12,19,19,19,6,8,3,0,
+0,5,6,29,30,30,31,6,7,0,
+0,5,19,33,88,87,35,19,7,0,
+0,5,19,33,89,90,35,6,7,0,
+0,5,6,37,38,38,39,6,7,0,
+0,9,13,6,19,19,6,4,11,0,
+21,0,9,10,10,10,10,11,0,21,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="44" type="EMERGED" x="-23.5" y="48.25" visible="0">
+   <polygon points="140.488,-33.6543 157.022,-18.2454 156.828,52.6181 140.89,69.6267 67.4972,67.5443 50.1664,50.1068 50.2811,-20.8182 69.1077,-37.921"/>
+  </object>
+  <object id="54" type="DECO" x="49.4056" y="79.7447">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" type="DECO" x="122.422" y="88.6144">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" type="DECO" x="56.5455" y="35.8182">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" type="DECO" x="99.6364" y="35.0909">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" type="DECO" x="109.273" y="72.5455">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" type="DECO" x="92" y="111.818">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" type="DECO" x="40.7273" y="95.6364">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" type="DECO" x="35.4545" y="51.4545">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" type="DECO" x="76.9091" y="36.1818">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" type="DECO" x="115.818" y="52.7273">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" type="DECO" x="111.636" y="98.7273">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" type="DECO" x="74.7273" y="107.273">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" type="DECO" x="56.9091" y="110.545">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" type="DECO" x="53.8182" y="50">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="DEAD_TREE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" type="DECO" x="79.6364" y="65.0909">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="ALLY_CORPSE_1"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

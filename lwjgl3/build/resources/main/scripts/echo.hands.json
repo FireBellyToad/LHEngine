@@ -1,0 +1,31 @@
+{
+  "name": "Multiple hands",
+  "description": "Multiple buried hands in cemetery claw the air",
+  "steps": [
+    {
+    },
+    {
+      "move" : {
+        "direction": "RIGHT",
+        "speed": 2
+      }
+    },
+    {
+      "move" : {
+        "direction": "LEFT",
+        "speed": 4
+      }
+    },
+    {
+      "move" : {
+        "direction": "RIGHT",
+        "speed": 2
+      }
+    },
+    {
+      "goTo" :{
+        "step": 0
+      }
+    }
+  ]
+}

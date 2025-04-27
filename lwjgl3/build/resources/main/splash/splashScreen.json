@@ -1,0 +1,56 @@
+{
+  "splashScreens": [
+    {
+      "splashKey": "splash.strix",
+      "splashPath": "splash/strix_splash.png"
+    },
+    {
+      "splashKey": "splash.bounded",
+      "splashPath": "splash/bounded_splash.png"
+    },
+    {
+      "splashKey": "splash.hive",
+      "splashPath": "splash/hive_splash.png"
+    },
+    {
+      "splashKey": "splash.spitter",
+      "splashPath": "splash/spitter_splash.png"
+    },
+    {
+      "splashKey": "splash.goldcross",
+      "splashPath": "splash/goldcross_splash.png"
+    },
+    {
+      "splashKey": "splash.holy.1",
+      "splashPath": "splash/holy_splash1.png"
+    },
+    {
+      "splashKey": "splash.holy.2",
+      "splashPath": "splash/holy_splash2.png"
+    },
+    {
+      "splashKey": "splash.gameover",
+      "splashPath": "splash/gameover_splash.png"
+    },
+    {
+      "splashKey": "splash.michael",
+      "splashPath": "splash/michael_splash.png"
+    },
+    {
+      "splashKey": "splash.burntmonk",
+      "splashPath": "splash/burntmonk_splash.png"
+    },
+    {
+      "splashKey": "splash.ritual",
+      "splashPath": "splash/ritual_splash.png"
+    },
+    {
+      "splashKey": "splash.waterskin",
+      "splashPath": "splash/waterskin_splash.png"
+    },
+    {
+      "splashKey": "splash.diaconus",
+      "splashPath": "splash/diaconus_splash.png"
+    }
+  ]
+}

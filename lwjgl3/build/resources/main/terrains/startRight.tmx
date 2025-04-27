@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="64">
+ <editorsettings>
+  <export format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <layer id="1" name="terrain" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,1,2,2,2,2,2,15,16,0,
+0,5,29,30,30,30,30,31,20,0,
+0,5,33,74,85,86,76,35,20,0,
+0,18,37,38,38,38,38,39,7,0,
+0,22,23,10,10,10,10,10,11,0,
+0,0,0,0,1,2,2,3,0,0,
+0,1,2,2,12,4,13,8,3,0,
+58,59,58,60,60,59,59,58,60,58
+</data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="25" type="DECO" x="98.4328" y="134.059">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" type="WALL" x="0" y="128" width="160" height="16"/>
+  <object id="38" type="DECO" x="119.099" y="141.237">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" type="DECO" x="144.1" y="142.85">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" type="DECO" x="82.8485" y="140.964">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" type="DECO" x="63.0736" y="131.392">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" type="DECO" x="25.0581" y="134.297">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" type="DECO" x="45.8358" y="143.107">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="STONE_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" type="EMERGED" x="-164.492" y="-56.332" rotation="0.0478909">
+   <polygon points="189.7,79.9906 298.698,79.5571 298.65,139.28 187.517,140.877"/>
+  </object>
+  <object id="50" type="DECO" x="37.6364" y="42.3636">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="IMPALED"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" type="EMERGED" x="-162.727" y="41.6364" rotation="0.0478909">
+   <polygon points="189.7,79.9906 236.699,80.6998 239.497,64.9658 281.454,64.9803 283.944,77.1723 295.552,81.5324 296.094,87.7607 191.359,88.2589"/>
+  </object>
+  <object id="53" type="DECO" x="121.273" y="78.1818">
+   <properties>
+    <property name="decoType" propertytype="DecoType" value="PLANT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" type="POI" x="63.3403" y="44.1857">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="PLEA"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" type="WALL" x="55" y="46" width="16" height="10"/>
+  <object id="61" type="POI" x="79.7784" y="67.4128">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="MICHAEL"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" type="POI" x="98.0356" y="44.2882">
+   <properties>
+    <property name="poiType" propertytype="PoiType" value="PARCHMENT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" type="WALL" x="89.6953" y="46.1025" width="16" height="10"/>
+ </objectgroup>
+</map>

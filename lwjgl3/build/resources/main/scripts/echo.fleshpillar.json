@@ -1,0 +1,38 @@
+{
+  "name": "Infernum flesh pillar",
+  "description": "A flesh pillar that bounces the player around",
+  "steps": [
+    {
+
+    },
+    {
+      "goTo": {
+        "end": true,
+        "checkOnEveryFrame": true,
+        "ifPlayerDamageIsMoreThan":5,
+        "ifNoKillableAlive": "ESCAPE_PORTAL"
+      },
+      "useAnimationOfStep": 0
+    },
+    {
+      "goTo": {
+        "end": true,
+        "checkOnEveryFrame": true,
+        "onlyOneConditionMustBeTrue": true,
+        "ifPlayerDamageIsMoreThan":5,
+        "ifNoKillableAlive": "ESCAPE_PORTAL"
+      },
+      "useAnimationOfStep": 0
+    },
+    {
+      "goTo": {
+        "step": 1,
+        "checkOnEveryFrame": true,
+        "onlyOneConditionMustBeTrue": true,
+        "ifPlayerDamageIsLessThan":5,
+        "ifAtLeastOneKillableAlive": "ESCAPE_PORTAL"
+      },
+      "useAnimationOfStep": 0
+    }
+  ]
+}

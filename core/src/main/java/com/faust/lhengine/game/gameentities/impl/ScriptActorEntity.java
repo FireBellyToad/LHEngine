@@ -64,8 +64,14 @@ public class ScriptActorEntity extends AnimatedEntity {
 
             commands.put(behaviour, extractValue(new HashMap<>(), s.child));
 
+            // Handle "useAnimationOfStep" and "repeatStep"
             if (commands.get(behaviour).containsKey(ScriptCommandsEnum.USE_ANIMATION_OF_STEP)) {
                 reusedAnimationSteps++;
+            } else  if (commands.get(behaviour).containsKey(ScriptCommandsEnum.REPEAT_STEP)) {
+                int stepToRepeat = (Integer) (commands.get(behaviour).get(ScriptCommandsEnum.REPEAT_STEP));
+                if (commands.get(GameBehavior.getFromOrdinal(stepToRepeat)).containsKey(ScriptCommandsEnum.USE_ANIMATION_OF_STEP)) {
+                    reusedAnimationSteps++;
+                } 
             }
 
             stepCounter++;
@@ -83,10 +89,17 @@ public class ScriptActorEntity extends AnimatedEntity {
         //Bind each animation row to each step
         for (GameBehavior step : stepOrder) {
             //If this step doesn't reuse another step's animation, save it
-            if (!commands.get(step).containsKey(ScriptCommandsEnum.USE_ANIMATION_OF_STEP)) {
-                addAnimation(new Animation<>(FRAME_DURATION, Arrays.copyOfRange(allFrames, getTextureColumns() * (stepCounter - reusedAnimationSteps), getTextureColumns() * (stepCounter - reusedAnimationSteps + 1))), step);
-            } else {
+            if (commands.get(step).containsKey(ScriptCommandsEnum.USE_ANIMATION_OF_STEP)) {
                 reusedAnimationSteps++;
+            } else  if (commands.get(step).containsKey(ScriptCommandsEnum.REPEAT_STEP)) {
+                int stepToRepeat = (Integer) (commands.get(step).get(ScriptCommandsEnum.REPEAT_STEP));
+                if (commands.get(GameBehavior.getFromOrdinal(stepToRepeat)).containsKey(ScriptCommandsEnum.USE_ANIMATION_OF_STEP)) {
+                    reusedAnimationSteps++;
+                } else {                
+                    addAnimation(new Animation<>(FRAME_DURATION, Arrays.copyOfRange(allFrames, getTextureColumns() * (stepCounter - reusedAnimationSteps), getTextureColumns() * (stepCounter - reusedAnimationSteps + 1))), step);
+                }
+            } else {                
+                addAnimation(new Animation<>(FRAME_DURATION, Arrays.copyOfRange(allFrames, getTextureColumns() * (stepCounter - reusedAnimationSteps), getTextureColumns() * (stepCounter - reusedAnimationSteps + 1))), step);
             }
 
             stepCounter++;

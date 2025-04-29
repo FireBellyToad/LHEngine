@@ -17,10 +17,7 @@
       }
     },
     {
-      "move" : {
-        "direction": "RIGHT",
-        "speed": 2
-      }
+      "repeatStep" : 1
     },
     {
       "goTo" :{

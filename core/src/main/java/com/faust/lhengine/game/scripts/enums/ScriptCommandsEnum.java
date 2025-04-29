@@ -33,6 +33,8 @@ public enum ScriptCommandsEnum {
     END("end", Boolean.class),
     ONLY_ONE_CONDITION_MUST_BE_TRUE("onlyOneConditionMustBeTrue", Boolean.class),
     INCREASE_COUNTER_OF("increaseCounterOf", Integer.class),
+    REPEAT_STEP("repeatStep", Integer.class),
+
 
     //Composite
     COUNTER("hurtPlayer", ScriptCommandsEnum.class, new ScriptCommandsEnum[]{DAMAGE, CAN_KILL_PLAYER}),

@@ -27,8 +27,7 @@ public enum RoomTypeEnum {
     START_LEFT("startLeft.tmx"),
     START_RIGHT("startRight.tmx"),
     PEDESTAL("pedestal.tmx"),
-    TEST("scriptTestChamber.tmx")
-    ;
+    TEST("scriptTestChamber.tmx");
 
     private final String mapFileName;
 

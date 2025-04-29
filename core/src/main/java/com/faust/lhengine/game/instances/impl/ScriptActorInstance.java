@@ -33,7 +33,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-
 /**
  * Class for Echo Actors Instances
  *
@@ -49,8 +48,8 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
     private final SpawnFactory spawnFactory;
     private int instanceCounter;
 
-
-    public ScriptActorInstance(ScriptActorType scriptActorType, float x, float y, AssetManager assetManager, TriggerArea triggerForActor, SpawnFactory spawnFactory) {
+    public ScriptActorInstance(ScriptActorType scriptActorType, float x, float y, AssetManager assetManager,
+            TriggerArea triggerForActor, SpawnFactory spawnFactory) {
         super(new ScriptActorEntity(scriptActorType, assetManager));
         this.startX = x;
         this.startY = y;
@@ -59,7 +58,7 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
         this.triggerForActor = triggerForActor;
         this.instanceCounter = 0;
 
-        //get first step
+        // get first step
         changeCurrentBehavior(((ScriptActorEntity) this.entity).getStepOrder().get(0));
     }
 
@@ -69,28 +68,34 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
         // If must be removed, avoid logic
         if (!removeFromRoom) {
 
-            //Check if echo is active. On first iteration set to true
+            // Check if echo is active. On first iteration set to true
             if (!echoIsActive) {
                 echoIsActive = true;
             }
 
-            //initialize deltatime
+            // initialize deltatime
             if (deltaTime == 0)
                 deltaTime = stateTime;
 
-            //All commands to do in this step
-            executeCommands(((ScriptActorEntity) this.entity).getCommandsForStep(getCurrentBehavior()), roomContent, stateTime);
+            // All commands to do in this step
+            executeCommands(roomContent, stateTime);
         }
     }
 
     /**
      * Executes all the commands in one step
      *
-     * @param commands    the commands - values Map
      * @param roomContent the room contents
      * @param stateTime   stateTime of the main loop
      */
-    private void executeCommands(final Map<ScriptCommandsEnum, Object> commands, RoomContent roomContent, float stateTime) {
+    private void executeCommands(RoomContent roomContent, float stateTime) {
+
+        Map<ScriptCommandsEnum,Object> commands = ((ScriptActorEntity) this.entity).getCommandsForStep(getCurrentBehavior());
+
+        if (commands.containsKey(ScriptCommandsEnum.REPEAT_STEP)) {
+            int stepToRepeat = (Integer) commands.get(ScriptCommandsEnum.REPEAT_STEP);
+            commands = ((ScriptActorEntity) this.entity).getCommandsForStep(GameBehavior.getFromOrdinal(stepToRepeat));
+        }
 
         final Boolean checkOnEveryFrame = (Boolean) commands.getOrDefault(ScriptCommandsEnum.CHECK_ON_EVERY_FRAME, false);
 
@@ -160,22 +165,23 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
      * @param roomContent
      * @return
      */
-    private int getNewIndex(List<GameBehavior> stepOrder, Map<ScriptCommandsEnum, Object> commands, RoomContent roomContent) {
+    private int getNewIndex(List<GameBehavior> stepOrder, Map<ScriptCommandsEnum, Object> commands,
+            RoomContent roomContent) {
 
-        //If has "go to step" or "terminate", handle it correctly
+        // If has "go to step" or "terminate", handle it correctly
         if (commands.containsKey(ScriptCommandsEnum.STEP)) {
 
             final Integer index = (Integer) commands.get(ScriptCommandsEnum.STEP);
 
             if (checkConditionalCommands(commands, roomContent)) {
 
-                //If no "until" condition, just jump to "go to step" value
+                // If no "until" condition, just jump to "go to step" value
                 return stepOrder.indexOf(GameBehavior.getFromOrdinal(index));
 
             }
 
         } else if (commands.containsKey(ScriptCommandsEnum.END)) {
-            //return Size to end echo
+            // return Size to end echo
             if (checkConditionalCommands(commands, roomContent)) {
                 return stepOrder.size();
             }
@@ -192,72 +198,90 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
      */
     private boolean checkConditionalCommands(Map<ScriptCommandsEnum, Object> commands, RoomContent roomContent) {
 
-        //If there are no conditions, just go
-        if (!commands.containsKey(ScriptCommandsEnum.IF_PLAYER_DAMAGE_IS_LESS_THAN) && !commands.containsKey(ScriptCommandsEnum.IF_PLAYER_DAMAGE_IS_MORE_THAN) &&
-                !commands.containsKey(ScriptCommandsEnum.IF_AT_LEAST_ONE_KILLABLE_ALIVE) && !commands.containsKey(ScriptCommandsEnum.IF_NO_KILLABLE_ALIVE) &&
-                !commands.containsKey(ScriptCommandsEnum.IF_NO_KILLABLE_ALIVE) && !commands.containsKey(ScriptCommandsEnum.IF_AT_LEAST_ONE_POI_EXAMINABLE) &&
-                !commands.containsKey(ScriptCommandsEnum.IF_COUNTER_IS_GREATER_THAN) && !commands.containsKey(ScriptCommandsEnum.IF_COUNTER_IS_LESS_THAN)) {
+        // If there are no conditions, just go
+        if (!commands.containsKey(ScriptCommandsEnum.IF_PLAYER_DAMAGE_IS_LESS_THAN)
+                && !commands.containsKey(ScriptCommandsEnum.IF_PLAYER_DAMAGE_IS_MORE_THAN) &&
+                !commands.containsKey(ScriptCommandsEnum.IF_AT_LEAST_ONE_KILLABLE_ALIVE)
+                && !commands.containsKey(ScriptCommandsEnum.IF_NO_KILLABLE_ALIVE) &&
+                !commands.containsKey(ScriptCommandsEnum.IF_NO_KILLABLE_ALIVE)
+                && !commands.containsKey(ScriptCommandsEnum.IF_AT_LEAST_ONE_POI_EXAMINABLE) &&
+                !commands.containsKey(ScriptCommandsEnum.IF_COUNTER_IS_GREATER_THAN)
+                && !commands.containsKey(ScriptCommandsEnum.IF_COUNTER_IS_LESS_THAN)) {
             return true;
         }
 
-        //If onlyOneConditionMustBeTrue = true, we use OR instead of AND when checking conditions.
-        //That means that the initial value of this variable must be respectively "true" or "false" to
-        //ensure checking is done right
-        final boolean onlyOneConditionMustBeTrue = (boolean) commands.getOrDefault(ScriptCommandsEnum.ONLY_ONE_CONDITION_MUST_BE_TRUE, false);
+        // If onlyOneConditionMustBeTrue = true, we use OR instead of AND when checking
+        // conditions.
+        // That means that the initial value of this variable must be respectively
+        // "true" or "false" to
+        // ensure checking is done right
+        final boolean onlyOneConditionMustBeTrue = (boolean) commands
+                .getOrDefault(ScriptCommandsEnum.ONLY_ONE_CONDITION_MUST_BE_TRUE, false);
         boolean areConditionsTrue = !onlyOneConditionMustBeTrue;
 
-        //Check condition on until Player has at least less then N damage (priority on other checks)
+        // Check condition on until Player has at least less then N damage (priority on
+        // other checks)
         if (commands.containsKey(ScriptCommandsEnum.IF_PLAYER_DAMAGE_IS_LESS_THAN)) {
-            //Extract value of damage
+            // Extract value of damage
             final int value = (int) commands.get(ScriptCommandsEnum.IF_PLAYER_DAMAGE_IS_LESS_THAN);
             areConditionsTrue = roomContent.player.getDamage() <= value;
         } else if (commands.containsKey(ScriptCommandsEnum.IF_PLAYER_DAMAGE_IS_MORE_THAN)) {
-            //Check condition on if Player has more then N damage (priority on other checks)
+            // Check condition on if Player has more then N damage (priority on other
+            // checks)
             final int value = (int) commands.get(ScriptCommandsEnum.IF_PLAYER_DAMAGE_IS_MORE_THAN);
             areConditionsTrue = roomContent.player.getDamage() > value;
         }
 
-        //Check condition on until there is at least one enemy of type is alive in room
+        // Check condition on until there is at least one enemy of type is alive in room
         if (commands.containsKey(ScriptCommandsEnum.IF_AT_LEAST_ONE_KILLABLE_ALIVE)) {
-            //Extract instance class from enum and do check
-            final EnemyEnum enemyEnum = EnemyEnum.valueOf((String) commands.get(ScriptCommandsEnum.IF_AT_LEAST_ONE_KILLABLE_ALIVE));
+            // Extract instance class from enum and do check
+            final EnemyEnum enemyEnum = EnemyEnum
+                    .valueOf((String) commands.get(ScriptCommandsEnum.IF_AT_LEAST_ONE_KILLABLE_ALIVE));
             final Class<? extends AnimatedInstance> enemyClass = enemyEnum.getInstanceClass();
 
             if (onlyOneConditionMustBeTrue) {
-                areConditionsTrue = areConditionsTrue || roomContent.enemyList.stream().anyMatch(e -> enemyClass.equals(e.getClass()) && !((Killable) e).isDead());
+                areConditionsTrue = areConditionsTrue || roomContent.enemyList.stream()
+                        .anyMatch(e -> enemyClass.equals(e.getClass()) && !((Killable) e).isDead());
             } else {
-                areConditionsTrue = areConditionsTrue && roomContent.enemyList.stream().anyMatch(e -> enemyClass.equals(e.getClass()) && !((Killable) e).isDead());
+                areConditionsTrue = areConditionsTrue && roomContent.enemyList.stream()
+                        .anyMatch(e -> enemyClass.equals(e.getClass()) && !((Killable) e).isDead());
             }
 
         } else if (commands.containsKey(ScriptCommandsEnum.IF_NO_KILLABLE_ALIVE)) {
-            //Check condition on if there is no enemy of type is alive in room
-            //Extract instance class from enum and do check
-            final EnemyEnum enemyEnum = EnemyEnum.valueOf((String) commands.get(ScriptCommandsEnum.IF_NO_KILLABLE_ALIVE));
+            // Check condition on if there is no enemy of type is alive in room
+            // Extract instance class from enum and do check
+            final EnemyEnum enemyEnum = EnemyEnum
+                    .valueOf((String) commands.get(ScriptCommandsEnum.IF_NO_KILLABLE_ALIVE));
             final Class<? extends AnimatedInstance> enemyClass = enemyEnum.getInstanceClass();
 
             if (onlyOneConditionMustBeTrue) {
-                areConditionsTrue = areConditionsTrue || roomContent.enemyList.stream().noneMatch(e -> enemyClass.equals(e.getClass()) && !((Killable) e).isDead());
+                areConditionsTrue = areConditionsTrue || roomContent.enemyList.stream()
+                        .noneMatch(e -> enemyClass.equals(e.getClass()) && !((Killable) e).isDead());
             } else {
-                areConditionsTrue = areConditionsTrue && roomContent.enemyList.stream().noneMatch(e -> enemyClass.equals(e.getClass()) && !((Killable) e).isDead());
+                areConditionsTrue = areConditionsTrue && roomContent.enemyList.stream()
+                        .noneMatch(e -> enemyClass.equals(e.getClass()) && !((Killable) e).isDead());
             }
 
         }
 
-        //Check condition on until there is in the room at least one examinable POI
+        // Check condition on until there is in the room at least one examinable POI
         if (commands.containsKey(ScriptCommandsEnum.IF_AT_LEAST_ONE_POI_EXAMINABLE)) {
-            //Extract Poi type and do check
-            final POIEnum poiEnum = POIEnum.valueOf((String) commands.get(ScriptCommandsEnum.IF_AT_LEAST_ONE_POI_EXAMINABLE));
+            // Extract Poi type and do check
+            final POIEnum poiEnum = POIEnum
+                    .valueOf((String) commands.get(ScriptCommandsEnum.IF_AT_LEAST_ONE_POI_EXAMINABLE));
 
             if (onlyOneConditionMustBeTrue) {
-                areConditionsTrue = areConditionsTrue || roomContent.poiList.stream().anyMatch(poi -> poiEnum.equals(poi.getType()) && poi.isAlreadyExamined());
+                areConditionsTrue = areConditionsTrue || roomContent.poiList.stream()
+                        .anyMatch(poi -> poiEnum.equals(poi.getType()) && poi.isAlreadyExamined());
             } else {
-                areConditionsTrue = areConditionsTrue && roomContent.poiList.stream().anyMatch(poi -> poiEnum.equals(poi.getType()) && poi.isAlreadyExamined());
+                areConditionsTrue = areConditionsTrue && roomContent.poiList.stream()
+                        .anyMatch(poi -> poiEnum.equals(poi.getType()) && poi.isAlreadyExamined());
             }
         }
 
-        //Check condition on counter
+        // Check condition on counter
         if (commands.containsKey(ScriptCommandsEnum.IF_COUNTER_IS_GREATER_THAN)) {
-            //Extract instance class from enum and do check
+            // Extract instance class from enum and do check
             final int counterValue = (Integer) commands.get(ScriptCommandsEnum.IF_COUNTER_IS_GREATER_THAN);
 
             if (onlyOneConditionMustBeTrue) {
@@ -266,8 +290,8 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
                 areConditionsTrue = areConditionsTrue && (this.instanceCounter > counterValue);
             }
 
-        } else  if (commands.containsKey(ScriptCommandsEnum.IF_COUNTER_IS_LESS_THAN)) {
-            //Extract instance class from enum and do check
+        } else if (commands.containsKey(ScriptCommandsEnum.IF_COUNTER_IS_LESS_THAN)) {
+            // Extract instance class from enum and do check
             final int counterValue = (Integer) commands.get(ScriptCommandsEnum.IF_COUNTER_IS_LESS_THAN);
 
             if (onlyOneConditionMustBeTrue) {
@@ -288,11 +312,11 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
      */
     private void spawnInstances(Map<ScriptCommandsEnum, Object> commands) {
 
-        //Should not spawn anything if has no identifier
+        // Should not spawn anything if has no identifier
         if (!commands.containsKey(ScriptCommandsEnum.IDENTIFIER))
             return;
 
-        //FIXME use class name?
+        // FIXME use class name?
         String thingName = (String) commands.get(ScriptCommandsEnum.IDENTIFIER);
         EnemyEnum enemyEnum = null;
         POIEnum poiEnum = null;
@@ -300,16 +324,16 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
         try {
             enemyEnum = EnemyEnum.valueOf(thingName);
         } catch (Exception e) {
-            //Nothing to do here...
+            // Nothing to do here...
         }
 
         try {
             poiEnum = POIEnum.valueOf(thingName);
         } catch (Exception e) {
-            //Nothing to do here...
+            // Nothing to do here...
         }
 
-        //Set spawn coordinates
+        // Set spawn coordinates
         float spawnX = startX;
         float spawnY = startY;
         boolean useRelative = (boolean) commands.getOrDefault(ScriptCommandsEnum.RELATIVE, false);
@@ -353,7 +377,7 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
         switch (((ScriptActorEntity) entity).getEchoesActorType()) {
             case DEAD_HAND:
             case DEAD_DOUBLE_HAND:
-                //Glitchy movement for skeletons
+                // Glitchy movement for skeletons
                 return 1.5f * (stateTime - deltaTime);
 
             default:
@@ -394,25 +418,32 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
     public void draw(SpriteBatch batch, float stateTime) {
         Objects.requireNonNull(batch);
 
-        //Do not draw if must be removed
+        // Do not draw if must be removed
         if (removeFromRoom) {
             ((ScriptActorEntity) entity).stopStartingSound();
             return;
         }
 
-        final Map<ScriptCommandsEnum, Object> commands = ((ScriptActorEntity) this.entity).getCommandsForStep(getCurrentBehavior());
+        Map<ScriptCommandsEnum, Object> commands = ((ScriptActorEntity) this.entity)
+                .getCommandsForStep(getCurrentBehavior());
 
-        //If has ScriptCommandsEnum.INVISIBLE == true don't draw anything
+        if (commands.containsKey(ScriptCommandsEnum.REPEAT_STEP)) {
+            int stepToRepeat = (Integer) commands.get(ScriptCommandsEnum.REPEAT_STEP);
+            commands = ((ScriptActorEntity) this.entity).getCommandsForStep(GameBehavior.getFromOrdinal(stepToRepeat));
+        }
+
+        // If has ScriptCommandsEnum.INVISIBLE == true don't draw anything
         if ((Boolean) commands.getOrDefault(ScriptCommandsEnum.INVISIBLE, false)) {
             return;
         }
 
         batch.begin();
 
-        //Reuse animation of another step if specified
+        // Reuse animation of another step if specified
         GameBehavior animationToUse = getCurrentBehavior();
         if (commands.containsKey(ScriptCommandsEnum.USE_ANIMATION_OF_STEP)) {
-            animationToUse = ((ScriptActorEntity) entity).getStepOrder().get((Integer) commands.get(ScriptCommandsEnum.USE_ANIMATION_OF_STEP));
+            animationToUse = ((ScriptActorEntity) entity).getStepOrder()
+                    .get((Integer) commands.get(ScriptCommandsEnum.USE_ANIMATION_OF_STEP));
         }
 
         // Should not loop!
@@ -433,7 +464,14 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
     public String getCurrentTextBoxToShow() {
         if (showTextBox) {
             showTextBox = false;
-            Map<ScriptCommandsEnum, Object> commandOnCurrentStep = ((ScriptActorEntity) entity).getCommandsForStep(getCurrentBehavior());
+            Map<ScriptCommandsEnum, Object> commandOnCurrentStep = ((ScriptActorEntity) entity)
+                    .getCommandsForStep(getCurrentBehavior());
+
+            if (commandOnCurrentStep.containsKey(ScriptCommandsEnum.REPEAT_STEP)) {
+                int stepToRepeat = (Integer) commandOnCurrentStep.get(ScriptCommandsEnum.REPEAT_STEP);
+                commandOnCurrentStep = ((ScriptActorEntity) this.entity).getCommandsForStep(GameBehavior.getFromOrdinal(stepToRepeat));
+            }
+                    
             return (String) commandOnCurrentStep.get(ScriptCommandsEnum.TEXTBOX_KEY);
         }
 
@@ -441,7 +479,8 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
     }
 
     public boolean hasCurrentTextBoxToShow() {
-        return ((ScriptActorEntity) entity).getCommandsForStep(getCurrentBehavior()).containsKey(ScriptCommandsEnum.TEXTBOX_KEY) && showTextBox;
+        return ((ScriptActorEntity) entity).getCommandsForStep(getCurrentBehavior())
+                .containsKey(ScriptCommandsEnum.TEXTBOX_KEY) && showTextBox;
     }
 
     public void playStartingSound() {
@@ -450,11 +489,11 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
 
     @Override
     public double damageRoll() {
-        //Only certain echoes should harm the player
+        // Only certain echoes should harm the player
         switch (((ScriptActorEntity) entity).getEchoesActorType()) {
             case DEAD_HAND:
             case DEAD_DOUBLE_HAND:
-                //Ld6
+                // Ld6
                 return Math.min(MathUtils.random(1, 6), MathUtils.random(1, 6));
             case HORROR:
             case INFERNUM:
@@ -466,7 +505,7 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
 
     @Override
     public void doPlayerInteraction(PlayerInstance playerInstance) {
-        //If active, hurt player
+        // If active, hurt player
         if (echoIsActive) {
             playerInstance.hurt(this);
         }
@@ -474,16 +513,24 @@ public class ScriptActorInstance extends AnimatedInstance implements Interactabl
 
     @Override
     public void endPlayerInteraction(PlayerInstance playerInstance) {
-        //Nothing to do here... yet
+        // Nothing to do here... yet
     }
 
     /**
      * @return the Map layer to draw
      */
     public String overrideMapLayerDrawn() {
-        final Map<ScriptCommandsEnum, Object> extractedCommand = ((ScriptActorEntity) this.entity).getCommandsForStep(getCurrentBehavior());
+        Map<ScriptCommandsEnum, Object> extractedCommand = ((ScriptActorEntity) this.entity)
+                .getCommandsForStep(getCurrentBehavior());
+
+        if (extractedCommand.containsKey(ScriptCommandsEnum.REPEAT_STEP)) {
+            int stepToRepeat = (Integer) extractedCommand.get(ScriptCommandsEnum.REPEAT_STEP);
+            extractedCommand = ((ScriptActorEntity) this.entity).getCommandsForStep(GameBehavior.getFromOrdinal(stepToRepeat));
+        }
+                
         final String layerString = (String) extractedCommand.get(ScriptCommandsEnum.RENDER_ONLY_MAP_LAYER);
-        return Objects.isNull(layerString) ? MapLayersEnum.TERRAIN_LAYER.getLayerName() : MapLayersEnum.valueOf(layerString).getLayerName();
+        return Objects.isNull(layerString) ? MapLayersEnum.TERRAIN_LAYER.getLayerName()
+                : MapLayersEnum.valueOf(layerString).getLayerName();
     }
 
     public ScriptActorType getType() {

@@ -31,12 +31,12 @@ public class Lwjgl3Launcher {
         configuration.setForegroundFPS(Lwjgl3ApplicationConfiguration.getDisplayMode().refreshRate + 1);
 
         // //if parameter w is set, go windowed
-        if(Arrays.stream(args).anyMatch(stringarg -> "w".equals(stringarg) || "windowed".equals(stringarg))){
-            configuration.setWindowedMode((int) (LHEngine.GAME_HEIGHT * SCALE_FACTOR), (int) (LHEngine.GAME_WIDTH * SCALE_FACTOR));
+        // if(Arrays.stream(args).anyMatch(stringarg -> "w".equals(stringarg) || "windowed".equals(stringarg))){
+            configuration.setWindowedMode((int) (LHEngine.GAME_WIDTH * SCALE_FACTOR), (int) (LHEngine.GAME_HEIGHT * SCALE_FACTOR));
             configuration.setResizable(false);
-        } else{
-            configuration.setFullscreenMode( Lwjgl3ApplicationConfiguration.getDisplayMode());
-        }
+        // } else{
+        //     configuration.setFullscreenMode( Lwjgl3ApplicationConfiguration.getDisplayMode());
+        // }
 
         configuration.setWindowIcon("icon.png");
         return configuration;
